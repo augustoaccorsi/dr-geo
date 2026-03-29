@@ -10,18 +10,9 @@ export const HeaderContainer = styled.header`
     border-bottom: 1px solid ${({ theme }) => theme['base-button']};
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0;
-    z-index: 100;
-`;
-
-export const HeaderInner = styled.div`
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1280px;
     padding: 0 2rem;
+    z-index: 100;
 `;
 
 export const HomeLink = styled.a`

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, useNavigate } from 'react-router-dom';
 import { TiHome } from 'react-icons/ti';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import { HeaderContainer, HeaderInner, HomeLink, Nav, NavLink, HamburgerButton } from './styles';
+import { HeaderContainer, HomeLink, Nav, NavLink, HamburgerButton } from './styles';
 
 const Header = () => {
     const { t } = useTranslation();
@@ -17,21 +17,19 @@ const Header = () => {
 
     return (
         <HeaderContainer>
-            <HeaderInner>
-                <HomeLink as={Link} to="/">
-                    <TiHome size={28} />
-                </HomeLink>
+            <HomeLink as={Link} to="/">
+                <TiHome size={28} />
+            </HomeLink>
 
-                <Nav $open={menuOpen}>
-                    <NavLink as="span" onClick={() => handleNavClick('/company')}>{t('header.company')}</NavLink>
-                    <NavLink as="span" onClick={() => handleNavClick('/services')}>{t('header.services')}</NavLink>
-                    <NavLink as="span" onClick={() => handleNavClick('/contact')}>{t('header.contact')}</NavLink>
-                </Nav>
+            <Nav $open={menuOpen}>
+                <NavLink as="span" onClick={() => handleNavClick('/company')}>{t('header.company')}</NavLink>
+                <NavLink as="span" onClick={() => handleNavClick('/services')}>{t('header.services')}</NavLink>
+                <NavLink as="span" onClick={() => handleNavClick('/contact')}>{t('header.contact')}</NavLink>
+            </Nav>
 
-                <HamburgerButton onClick={() => setMenuOpen(prev => !prev)} aria-label="Toggle menu">
-                    {menuOpen ? <RiCloseLine size={26} /> : <RiMenu3Line size={26} />}
-                </HamburgerButton>
-            </HeaderInner>
+            <HamburgerButton onClick={() => setMenuOpen(prev => !prev)} aria-label="Toggle menu">
+                {menuOpen ? <RiCloseLine size={26} /> : <RiMenu3Line size={26} />}
+            </HamburgerButton>
         </HeaderContainer>
     );
 };
