@@ -7,22 +7,22 @@ const fadeUp = keyframes`
 `;
 
 export const PageContainer = styled.div`
-    max-width: 900px;
+    max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
 `;
 
 export const HomeWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 5rem;
-    padding-bottom: 5rem;
-    max-width: 900px;
+    gap: 4rem;
+    padding-bottom: 4rem;
+    max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 `;
 
 /* ── Hero ─────────────────────────────────────────────── */
@@ -139,7 +139,7 @@ export const HighlightsSection = styled.section`
 
 export const SectionHeader = styled.div`
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 `;
 
 export const SectionTitle = styled.h2`
@@ -193,5 +193,84 @@ export const CardTitle = styled.h3`
 export const CardDesc = styled.p`
     font-size: 0.95rem;
     line-height: 1.6;
+    color: ${({ theme }) => theme['base-text']};
+`;
+
+/* ── How It Works ─────────────────────────────────────── */
+export const HowItWorksSection = styled.section`
+    animation: ${fadeUp} 0.6s ease 0.45s both;
+`;
+
+export const StepsGrid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+`;
+
+export const Step = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: ${({ theme }) => theme['base-card']};
+    border: 1px solid ${({ theme }) => theme['base-button']};
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+`;
+
+export const StepNumber = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: ${({ theme }) => theme['purple']};
+`;
+
+export const StepContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+`;
+
+export const StepTitle = styled.h3`
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: ${({ theme }) => theme['base-subtitle']};
+`;
+
+export const StepDesc = styled.p`
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: ${({ theme }) => theme['base-text']};
+`;
+
+/* ── CTA ──────────────────────────────────────────────── */
+export const CtaSection = styled.section`
+    text-align: center;
+    background: ${({ theme }) => theme['base-card']};
+    border: 1px solid ${({ theme }) => theme['base-button']};
+    border-radius: 16px;
+    padding: 4rem 2rem;
+    animation: ${fadeUp} 0.6s ease 0.6s both;
+`;
+
+export const CtaTitle = styled.h2`
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 800;
+    color: ${({ theme }) => theme['base-title']};
+    margin-bottom: 1rem;
+`;
+
+export const CtaSubtitle = styled.p`
+    max-width: 560px;
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+    line-height: 1.7;
     color: ${({ theme }) => theme['base-text']};
 `;

@@ -27,6 +27,21 @@
       "card2_desc": "Advanced algorithms detect patterns, anomalies, and trends across vast geographic datasets automatically.",
       "card3_title": "Global Coverage",
       "card3_desc": "Full-planet satellite coverage with sub-meter resolution, available on-demand for any region on Earth."
+    },
+    "how": {
+      "title": "How It Works",
+      "subtitle": "From raw data to decision-ready intelligence in three streamlined steps.",
+      "step1_title": "Ingest & Integrate",
+      "step1_desc": "We pull in satellite feeds, sensor streams, and third-party datasets and normalize them into a unified geospatial pipeline.",
+      "step2_title": "Analyze & Enrich",
+      "step2_desc": "Our AI models run change detection, object recognition, and spatial analytics to surface the signals that matter.",
+      "step3_title": "Deliver & Act",
+      "step3_desc": "Insights are pushed to your dashboards, APIs, or alerts in real time so your teams can act without delay."
+    },
+    "cta": {
+      "title": "Ready to See the World Differently?",
+      "subtitle": "Talk to our geospatial experts and discover how Dr. Geo can transform your data into competitive advantage.",
+      "button": "Get in Touch"
     }
   }
 }

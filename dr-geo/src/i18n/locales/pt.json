@@ -27,6 +27,21 @@
       "card2_desc": "Algoritmos avançados detectam padrões, anomalias e tendências em vastos conjuntos de dados geográficos automaticamente.",
       "card3_title": "Cobertura Global",
       "card3_desc": "Cobertura de satélite de todo o planeta com resolução submétrica, disponível sob demanda para qualquer região da Terra."
+    },
+    "how": {
+      "title": "Como Funciona",
+      "subtitle": "De dados brutos à inteligência pronta para decisão em três etapas simples.",
+      "step1_title": "Ingestão e Integração",
+      "step1_desc": "Coletamos feeds de satélite, fluxos de sensores e conjuntos de dados de terceiros e os normalizamos em um pipeline geoespacial unificado.",
+      "step2_title": "Análise e Enriquecimento",
+      "step2_desc": "Nossos modelos de IA executam detecção de mudanças, reconhecimento de objetos e análises espaciais para revelar os sinais que importam.",
+      "step3_title": "Entrega e Ação",
+      "step3_desc": "Os insights são enviados aos seus dashboards, APIs ou alertas em tempo real para que suas equipes possam agir sem demora."
+    },
+    "cta": {
+      "title": "Pronto para Ver o Mundo de Forma Diferente?",
+      "subtitle": "Fale com nossos especialistas em geoespacial e descubra como a Dr. Geo pode transformar seus dados em vantagem competitiva.",
+      "button": "Entre em Contato"
     }
   }
 }

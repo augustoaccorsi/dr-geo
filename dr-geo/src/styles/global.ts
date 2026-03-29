@@ -13,6 +13,16 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
 
         padding-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #root {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     body, input, textarea, button {
