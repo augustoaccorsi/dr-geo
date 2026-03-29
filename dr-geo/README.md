@@ -1,73 +1,59 @@
-# React + TypeScript + Vite
+# Dr. Geo — Daiana Rodrigues, Geóloga
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site profissional de **Daiana Rodrigues**, geóloga — oferecendo mapeamento geológico, consultoria ambiental, análise de solo e rocha, e levantamentos de campo.
 
-Currently, two official plugins are available:
+🌐 **Live:** [augustoaccorsi.github.io/dr-geo](https://augustoaccorsi.github.io/dr-geo/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Tech | Role |
+|---|---|
+| React 19 + TypeScript | UI framework |
+| Vite 7 | Build tool & dev server |
+| styled-components | CSS-in-JS styling |
+| react-router-dom v7 | Client-side routing |
+| react-i18next | Internationalisation (PT / EN) |
+| react-icons | Icon library |
+| GitHub Actions | CI/CD deploy to GitHub Pages |
 
-## Expanding the ESLint configuration
+## Pages
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Home** — hero, stats, highlights, process steps, CTA
+- **Sobre** — bio, mission/vision, values, credentials, career timeline
+- **Serviços** — service cards, feature deep-dives, pricing packages
+- **Contato** — mailto form (subject + message), contact info, FAQ
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd dr-geo
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+App runs at `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Build
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+Output goes to `dr-geo/dist/`.
+
+## Deployment
+
+Pushes to `main` automatically deploy to GitHub Pages via `.github/workflows/deploy.yml`.
+
+To enable for the first time:
+1. Go to **Settings → Pages** in the GitHub repo
+2. Set **Source** to **GitHub Actions**
+3. Push any commit — the workflow handles the rest
+
+## Internationalisation
+
+Default language is **Portuguese (pt)**. English is also available.
+To change the default, update `lng` in [`src/i18n/index.ts`](src/i18n/index.ts).
+Translation files live in [`src/i18n/locales/`](src/i18n/locales/).
