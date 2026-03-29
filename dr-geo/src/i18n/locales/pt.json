@@ -43,5 +43,202 @@
       "subtitle": "Fale com nossos especialistas em geoespacial e descubra como a Dr. Geo pode transformar seus dados em vantagem competitiva.",
       "button": "Entre em Contato"
     }
+  },
+  "company": {
+    "hero": {
+      "tagline": "Quem Somos",
+      "title": "Inteligência Geoespacial,\nConduzida por Pessoas",
+      "description": "A Dr. Geo foi construída por cientistas, engenheiros e profissionais de dados unidos por um único propósito: tornar a complexidade da Terra compreensível e acionável para todas as organizações."
+    },
+    "mission": {
+      "label": "Missão",
+      "title": "Transformar geografia em decisões",
+      "text": "Existimos para preencher a lacuna entre dados espaciais brutos e as decisões do mundo real que dependem deles — entregando clareza em escala planetária com a precisão em que você pode confiar."
+    },
+    "vision": {
+      "label": "Visão",
+      "title": "Um mundo que age com base na localização",
+      "text": "Vislumbramos um futuro em que toda organização — de um planejador urbano a uma empresa global — tenha acesso instantâneo a inteligência geoespacial precisa e em tempo real."
+    },
+    "values": {
+      "title": "Pelo que Nos Comprometemos",
+      "subtitle": "Nossos valores não são um cartaz na parede. Eles moldam cada algoritmo, cada pipeline de dados e cada conversa com nossos clientes.",
+      "value1_title": "Precisão em Primeiro Lugar",
+      "value1_desc": "Nunca trocamos precisão por velocidade. Nossos modelos são validados contra dados reais antes de qualquer resultado chegar ao cliente.",
+      "value2_title": "Inovação Contínua",
+      "value2_desc": "Investimos fortemente em P&D para nos manter à frente da tecnologia de satélites, avanços em ML e as necessidades dos nossos clientes.",
+      "value3_title": "Centrado nas Pessoas",
+      "value3_desc": "Por trás de cada dado há uma decisão humana. Desenvolvemos ferramentas que capacitam equipes, não as substituem.",
+      "value4_title": "Dados Responsáveis",
+      "value4_desc": "Seguimos padrões éticos rigorosos sobre privacidade de dados, impacto ambiental e práticas transparentes de IA.",
+      "value5_title": "Parceria Verdadeira",
+      "value5_desc": "Nos integramos às equipes dos clientes, entendemos suas restrições e medimos o sucesso pelos resultados deles — não pelos nossos."
+    },
+    "team": {
+      "title": "A Equipe Por Trás dos Mapas",
+      "subtitle": "Um time multidisciplinar de geógrafos, cientistas de dados, engenheiros e especialistas espalhados por quatro continentes.",
+      "member1_name": "Rafael Andrade",
+      "member1_role": "CEO e Cofundador",
+      "member1_bio": "Ex-pesquisador do NASA JPL com 15 anos em sensoriamento remoto e análise espacial.",
+      "member2_name": "Lena Chen",
+      "member2_role": "CTO e Cofundadora",
+      "member2_bio": "Liderou pipelines de dados de satélite na Planet Labs antes de fundar a área de engenharia da Dr. Geo.",
+      "member3_name": "Marco Silva",
+      "member3_role": "Chefe de Pesquisa em IA",
+      "member3_bio": "Doutor em geografia computacional; publicou mais de 30 artigos sobre deep learning geoespacial.",
+      "member4_name": "Priya Venkatesan",
+      "member4_role": "VP de Produto",
+      "member4_bio": "10 anos construindo produtos de dados B2B em escala, focada em transformar complexidade em UX simples."
+    },
+    "timeline": {
+      "title": "Nossa Trajetória",
+      "subtitle": "Uma década construindo a infraestrutura que alimenta a inteligência de localização para as organizações mais exigentes do mundo.",
+      "tl1_title": "Fundada em São Paulo",
+      "tl1_desc": "A Dr. Geo nasce como um spinout de pesquisa de duas pessoas da USP, focada na classificação do uso agrícola da terra.",
+      "tl2_title": "Primeiro Contrato Empresarial",
+      "tl2_desc": "Fechamos um contrato de 3 anos com uma das 5 maiores empresas do agronegócio para monitorar o desmatamento em 12 milhões de hectares.",
+      "tl3_title": "Lançamento da Plataforma",
+      "tl3_desc": "Lançamos a plataforma SaaS da Dr. Geo — o primeiro produto de inteligência geoespacial self-service para equipes de médio porte.",
+      "tl4_title": "Expansão Global",
+      "tl4_desc": "Abrimos escritórios em Amsterdã e Cingapura; crescemos para 80 funcionários e mais de 80 clientes empresariais ativos.",
+      "tl5_title": "Pipeline com IA Nativa",
+      "tl5_desc": "Lançamos nosso pipeline de ingestão e análise totalmente com IA nativa, reduzindo o tempo para obter insights de dias para minutos."
+    },
+    "cta": {
+      "title": "Quer Construir o Futuro da Inteligência de Localização?",
+      "subtitle": "Seja você um parceiro em potencial, cliente ou o próximo grande talento — adoraríamos ouvir de você.",
+      "primary": "Fale Conosco",
+      "secondary": "Ver Serviços"
+    }
+  },
+  "services": {
+    "hero": {
+      "tagline": "O Que Oferecemos",
+      "title": "Serviços Geoespaciais\nProntos para Escala",
+      "description": "Da ingestão bruta de satélites a dashboards prontos para decisão, a Dr. Geo oferece o stack completo de serviços de inteligência de localização que sua organização precisa para agir mais rápido e enxergar mais longe."
+    },
+    "offerings": {
+      "title": "Nossos Serviços",
+      "subtitle": "Seis capacidades especializadas — implementáveis de forma independente ou como plataforma integrada.",
+      "svc1_title": "Análise de Imagens de Satélite",
+      "svc1_desc": "Processamento automatizado de cenas multiespectrais e SAR para classificação de cobertura do solo, índices de vegetação e detecção de mudanças urbanas.",
+      "svc2_title": "Monitoramento de Localização em Tempo Real",
+      "svc2_desc": "Fluxos contínuos de dados geoespaciais com latência abaixo de um minuto, limites de alerta configuráveis e dashboards de consciência situacional ao vivo.",
+      "svc3_title": "Detecção de Mudanças com IA",
+      "svc3_desc": "Modelos de deep learning que identificam automaticamente anomalias, eventos de desmatamento, mudanças em infraestrutura e impactos de desastres naturais em qualquer região.",
+      "svc4_title": "Inteligência de Rotas e Logística",
+      "svc4_desc": "Otimização espacial de cadeias de suprimentos, redes de última milha e operações de campo usando dados em tempo real de tráfego, terreno e risco.",
+      "svc5_title": "APIs de Dados Geoespaciais",
+      "svc5_desc": "APIs RESTful e de streaming que integram dados de satélite, geocodificação, geocodificação reversa e análises espaciais diretamente ao seu stack existente.",
+      "svc6_title": "Análises e Relatórios Personalizados",
+      "svc6_desc": "Dashboards geoespaciais sob medida e relatórios automatizados em PDF/CSV calibrados para seus KPIs, atualizados na frequência que você precisar."
+    },
+    "features": {
+      "title": "Visão Aprofundada da Plataforma",
+      "subtitle": "Duas capacidades que diferenciam a Dr. Geo de qualquer outro fornecedor geoespacial.",
+      "feat1_label": "Plataforma Principal",
+      "feat1_title": "Uma API Unificada para a Terra Inteira",
+      "feat1_desc": "Nossa API geoespacial unificada abstrai provedores de satélite, sistemas de coordenadas e complexidades de projeção — para que seus desenvolvedores consultem a Terra como um banco de dados.",
+      "feat1_b1": "Um único endpoint para mais de 12 constelações de satélites",
+      "feat1_b2": "Reprojeção e tiling automáticos",
+      "feat1_b3": "SDKs para Python, JavaScript e Go",
+      "feat2_label": "Motor de IA",
+      "feat2_title": "Modelos Treinados com Décadas de Dados Reais",
+      "feat2_desc": "Nossos modelos de IA são treinados e continuamente ajustados com conjuntos de dados de verdade validados, alcançando precisão líder do setor em biomas, climas e geografias.",
+      "feat2_b1": "99,8% de precisão na classificação de cobertura do solo",
+      "feat2_b2": "Detecta mudanças de até 0,1 hectares",
+      "feat2_b3": "Resultados explicáveis com pontuações de confiança"
+    },
+    "pricing": {
+      "title": "Preços Simples e Transparentes",
+      "subtitle": "Escale para cima ou para baixo conforme suas necessidades evoluem. Todos os planos incluem 14 dias de teste gratuito.",
+      "popular": "Mais Popular",
+      "cta": "Começar Agora",
+      "plan1_tier": "Inicial",
+      "plan1_name": "Explorer",
+      "plan1_desc": "Ideal para equipes que estão explorando inteligência geoespacial pela primeira vez.",
+      "plan1_f1": "Até 50 requisições de API/dia",
+      "plan1_f2": "3 regiões de monitoramento ativas",
+      "plan1_f3": "Relatórios semanais de detecção de mudanças",
+      "plan1_f4": "Suporte por e-mail",
+      "plan2_tier": "Profissional",
+      "plan2_name": "Analyst",
+      "plan2_desc": "Para organizações em crescimento que precisam de geoespacial de nível produção em escala.",
+      "plan2_f1": "Requisições de API ilimitadas",
+      "plan2_f2": "Regiões de monitoramento ilimitadas",
+      "plan2_f3": "Alertas em tempo real e streaming",
+      "plan2_f4": "Dashboards personalizados",
+      "plan2_f5": "Suporte prioritário com SLA",
+      "plan3_tier": "Empresarial",
+      "plan3_name": "Command",
+      "plan3_desc": "Acesso completo à plataforma, infraestrutura dedicada e onboarding personalizado.",
+      "plan3_f1": "Tudo do plano Analyst",
+      "plan3_f2": "Tenant de nuvem dedicado",
+      "plan3_f3": "Fine-tuning de modelos de IA personalizados",
+      "plan3_f4": "Opção de implantação on-premises",
+      "plan3_f5": "Gerente de sucesso do cliente dedicado"
+    },
+    "cta": {
+      "title": "Não Tem Certeza de Qual Plano se Encaixa?",
+      "subtitle": "Fale com nossa equipe de soluções. Vamos mapear exatamente o que você precisa — sem exageros, sem fidelização forçada.",
+      "primary": "Falar com Vendas",
+      "secondary": "Conheça o Time"
+    }
+  },
+  "contact": {
+    "hero": {
+      "tagline": "Entre em Contato",
+      "title": "Vamos Construir Algo\nJuntos",
+      "description": "Tem um projeto em mente, uma dúvida sobre nossa plataforma ou quer explorar o que a inteligência geoespacial pode fazer pela sua organização? Adoraríamos ouvir você."
+    },
+    "form": {
+      "title": "Envie uma Mensagem",
+      "subtitle": "Geralmente respondemos em até um dia útil.",
+      "first_name": "Nome",
+      "last_name": "Sobrenome",
+      "email": "E-mail Corporativo",
+      "company": "Empresa (opcional)",
+      "subject": "Sobre o que é isso?",
+      "subject_placeholder": "Selecione um tema…",
+      "subject_sales": "Vendas e Preços",
+      "subject_support": "Suporte Técnico",
+      "subject_partnership": "Parceria",
+      "subject_careers": "Carreiras",
+      "subject_other": "Outro",
+      "message": "Mensagem",
+      "message_placeholder": "Conte-nos sobre seu projeto, prazo ou qualquer dúvida que tiver…",
+      "submit": "Enviar Mensagem",
+      "success": "Mensagem enviada! Entraremos em contato em até um dia útil."
+    },
+    "info": {
+      "reach_title": "Fale Diretamente Conosco",
+      "email_label": "E-mail",
+      "phone_label": "Telefone",
+      "hours_label": "Horário Comercial",
+      "hours_value": "Seg–Sex, 8h–18h (BRT)",
+      "offices_title": "Nossos Escritórios",
+      "hq_label": "Sede",
+      "eu_label": "Europa",
+      "apac_label": "Ásia-Pacífico",
+      "support_title": "Suporte ao Cliente",
+      "support_label": "SLA Empresarial",
+      "support_value": "24/7 para os planos Professional e Command"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "subtitle": "Respostas rápidas para as perguntas que mais recebemos.",
+      "faq1_q": "Existe um período de avaliação gratuita?",
+      "faq1_a": "Sim — todos os planos incluem 14 dias de avaliação gratuita sem necessidade de cartão de crédito. Você tem acesso completo à plataforma durante o período.",
+      "faq2_q": "Em quanto tempo conseguimos fazer o onboarding?",
+      "faq2_a": "A maioria das equipes conclui o onboarding em até 48 horas. Clientes empresariais com requisitos personalizados geralmente levam 1 a 2 semanas.",
+      "faq3_q": "Vocês suportam implantação on-premises?",
+      "faq3_a": "Implantações on-premises e em nuvem privada estão disponíveis no plano Command (Empresarial). Entre em contato com vendas para detalhes de arquitetura.",
+      "faq4_q": "Quais constelações de satélites vocês suportam?",
+      "faq4_a": "Ingerimos dados de mais de 12 constelações, incluindo Sentinel-2, Landsat, Planet Labs, Maxar e vários provedores comerciais de SAR.",
+      "faq5_q": "Posso usar meus próprios modelos de IA?",
+      "faq5_a": "Sim. A plataforma suporta implantação de modelos próprios via nosso SDK. Também oferecemos serviços de fine-tuning em seus conjuntos de dados rotulados.",
+      "faq6_q": "Como a privacidade dos dados é tratada?",
+      "faq6_a": "Todos os dados são criptografados em trânsito e em repouso. Somos certificados SOC 2 Tipo II e em conformidade com a LGPD/GDPR. Seus dados nunca são compartilhados nem usados para treinar modelos compartilhados."
+    }
   }
 }

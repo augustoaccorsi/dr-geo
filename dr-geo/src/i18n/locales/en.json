@@ -43,5 +43,202 @@
       "subtitle": "Talk to our geospatial experts and discover how Dr. Geo can transform your data into competitive advantage.",
       "button": "Get in Touch"
     }
+  },
+  "company": {
+    "hero": {
+      "tagline": "Who We Are",
+      "title": "Geospatial Intelligence,\nHuman-Led",
+      "description": "Dr. Geo was built by scientists, engineers, and data professionals united by a single purpose: making the Earth's complexity understandable and actionable for every organization."
+    },
+    "mission": {
+      "label": "Mission",
+      "title": "Turn geography into decisions",
+      "text": "We exist to bridge the gap between raw spatial data and the real-world decisions that depend on it — delivering clarity at planetary scale with precision you can trust."
+    },
+    "vision": {
+      "label": "Vision",
+      "title": "A world that acts on location",
+      "text": "We envision a future where every organization — from a city planner to a global enterprise — has instant access to accurate, real-time geospatial intelligence."
+    },
+    "values": {
+      "title": "What We Stand For",
+      "subtitle": "Our values aren't a poster on the wall. They shape every algorithm, every data pipeline, and every conversation with our clients.",
+      "value1_title": "Precision First",
+      "value1_desc": "We never trade accuracy for speed. Our models are validated against ground truth before any result reaches a customer.",
+      "value2_title": "Relentless Innovation",
+      "value2_desc": "We invest heavily in R&D to stay ahead of satellite technology, ML advances, and the evolving needs of our clients.",
+      "value3_title": "People-Centered",
+      "value3_desc": "Behind every data point is a human decision. We design tools that empower teams, not replace them.",
+      "value4_title": "Responsible Data",
+      "value4_desc": "We hold ourselves to strict ethical standards on data privacy, environmental impact, and transparent AI practices.",
+      "value5_title": "True Partnership",
+      "value5_desc": "We embed with our clients' teams, understand their constraints, and measure success by their outcomes — not ours."
+    },
+    "team": {
+      "title": "The Team Behind the Maps",
+      "subtitle": "A multidisciplinary crew of geographers, data scientists, engineers, and domain specialists spread across four continents.",
+      "member1_name": "Rafael Andrade",
+      "member1_role": "CEO & Co-founder",
+      "member1_bio": "Former NASA JPL researcher with 15 years in remote sensing and spatial analytics.",
+      "member2_name": "Lena Chen",
+      "member2_role": "CTO & Co-founder",
+      "member2_bio": "Led satellite data pipelines at Planet Labs before founding Dr. Geo's engineering org.",
+      "member3_name": "Marco Silva",
+      "member3_role": "Head of AI Research",
+      "member3_bio": "PhD in computational geography; published 30+ papers on geospatial deep learning.",
+      "member4_name": "Priya Venkatesan",
+      "member4_role": "VP of Product",
+      "member4_bio": "10 years building B2B data products at scale, focused on turning complexity into simple UX."
+    },
+    "timeline": {
+      "title": "Our Journey",
+      "subtitle": "A decade of building the infrastructure that powers location intelligence for the world's most demanding organizations.",
+      "tl1_title": "Founded in São Paulo",
+      "tl1_desc": "Dr. Geo starts as a two-person research spinout from USP, focused on agricultural land-use classification.",
+      "tl2_title": "First Enterprise Contract",
+      "tl2_desc": "Secured a 3-year deal with a top-5 agribusiness firm to monitor deforestation across 12M hectares.",
+      "tl3_title": "Platform Launch",
+      "tl3_desc": "Released the Dr. Geo SaaS platform — the first self-serve geospatial intelligence product for mid-market teams.",
+      "tl4_title": "Global Expansion",
+      "tl4_desc": "Opened offices in Amsterdam and Singapore; grew to 80 employees and 80+ active enterprise clients.",
+      "tl5_title": "AI-Native Pipeline",
+      "tl5_desc": "Shipped our fully AI-native ingestion and analysis pipeline, cutting time-to-insight from days to minutes."
+    },
+    "cta": {
+      "title": "Want to Build the Future of Location Intelligence?",
+      "subtitle": "Whether you're a potential partner, client, or the next great hire — we'd love to hear from you.",
+      "primary": "Contact Us",
+      "secondary": "Explore Services"
+    }
+  },
+  "services": {
+    "hero": {
+      "tagline": "What We Offer",
+      "title": "Geospatial Services\nBuilt for Scale",
+      "description": "From raw satellite ingestion to decision-ready dashboards, Dr. Geo provides the full stack of location intelligence services your organization needs to move faster and see further."
+    },
+    "offerings": {
+      "title": "Our Services",
+      "subtitle": "Six specialized capabilities — deployable independently or as an integrated platform.",
+      "svc1_title": "Satellite Imagery Analysis",
+      "svc1_desc": "Automated processing of multispectral and SAR satellite scenes for land-cover classification, vegetation indices, and urban change detection.",
+      "svc2_title": "Real-Time Location Monitoring",
+      "svc2_desc": "Continuous geospatial data streams with sub-minute latency, configurable alert thresholds, and live situational awareness dashboards.",
+      "svc3_title": "AI-Powered Change Detection",
+      "svc3_desc": "Deep learning models that automatically flag anomalies, deforestation events, infrastructure changes, and natural disaster impacts across any region.",
+      "svc4_title": "Routing & Logistics Intelligence",
+      "svc4_desc": "Spatial optimization of supply chains, last-mile delivery networks, and field operations using live traffic, terrain, and risk data.",
+      "svc5_title": "Geospatial Data APIs",
+      "svc5_desc": "RESTful and streaming APIs that integrate satellite data, geocoding, reverse geocoding, and spatial analytics directly into your existing stack.",
+      "svc6_title": "Custom Analytics & Reporting",
+      "svc6_desc": "Tailored geospatial dashboards and automated PDF/CSV reports calibrated to your KPIs, updated on any cadence you need."
+    },
+    "features": {
+      "title": "Platform Deep Dives",
+      "subtitle": "Two capabilities that set Dr. Geo apart from every other geospatial vendor.",
+      "feat1_label": "Core Platform",
+      "feat1_title": "A Unified API for the Entire Earth",
+      "feat1_desc": "Our unified geospatial API abstracts away satellite providers, coordinate systems, and projection complexities — so your developers query Earth like a database.",
+      "feat1_b1": "Single endpoint for 12+ satellite constellations",
+      "feat1_b2": "Automatic reprojection and tiling",
+      "feat1_b3": "SDKs for Python, JavaScript, and Go",
+      "feat2_label": "AI Engine",
+      "feat2_title": "Models Trained on Decades of Ground Truth",
+      "feat2_desc": "Our AI models are trained and continuously fine-tuned on validated ground-truth datasets, achieving industry-leading accuracy across biomes, climates, and geographies.",
+      "feat2_b1": "99.8% accuracy on land-cover classification",
+      "feat2_b2": "Detects changes as small as 0.1 hectares",
+      "feat2_b3": "Explainable outputs with confidence scores"
+    },
+    "pricing": {
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Scale up or down as your needs evolve. All plans include a 14-day free trial.",
+      "popular": "Most Popular",
+      "cta": "Get Started",
+      "plan1_tier": "Starter",
+      "plan1_name": "Explorer",
+      "plan1_desc": "Perfect for teams exploring geospatial intelligence for the first time.",
+      "plan1_f1": "Up to 50 API requests/day",
+      "plan1_f2": "3 active monitoring regions",
+      "plan1_f3": "Weekly change detection reports",
+      "plan1_f4": "Email support",
+      "plan2_tier": "Professional",
+      "plan2_name": "Analyst",
+      "plan2_desc": "For growing organizations that need production-grade geospatial at scale.",
+      "plan2_f1": "Unlimited API requests",
+      "plan2_f2": "Unlimited monitoring regions",
+      "plan2_f3": "Real-time alerts & streaming",
+      "plan2_f4": "Custom dashboards",
+      "plan2_f5": "Priority support with SLA",
+      "plan3_tier": "Enterprise",
+      "plan3_name": "Command",
+      "plan3_desc": "Full-platform access, dedicated infrastructure, and white-glove onboarding.",
+      "plan3_f1": "Everything in Analyst",
+      "plan3_f2": "Dedicated cloud tenant",
+      "plan3_f3": "Custom AI model fine-tuning",
+      "plan3_f4": "On-premises deployment option",
+      "plan3_f5": "Dedicated customer success manager"
+    },
+    "cta": {
+      "title": "Not Sure Which Plan Fits?",
+      "subtitle": "Talk to our solutions team. We'll map out exactly what you need — no overselling, no lock-in.",
+      "primary": "Talk to Sales",
+      "secondary": "Meet the Team"
+    }
+  },
+  "contact": {
+    "hero": {
+      "tagline": "Get in Touch",
+      "title": "Let's Build Something\nTogether",
+      "description": "Have a project in mind, a question about our platform, or just want to explore what geospatial intelligence could do for your organization? We'd love to hear from you."
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "subtitle": "We typically respond within one business day.",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "email": "Work Email",
+      "company": "Company (optional)",
+      "subject": "What's this about?",
+      "subject_placeholder": "Select a topic…",
+      "subject_sales": "Sales & Pricing",
+      "subject_support": "Technical Support",
+      "subject_partnership": "Partnership",
+      "subject_careers": "Careers",
+      "subject_other": "Other",
+      "message": "Message",
+      "message_placeholder": "Tell us about your project, timeline, or any questions you have…",
+      "submit": "Send Message",
+      "success": "Message sent! We'll be in touch within one business day."
+    },
+    "info": {
+      "reach_title": "Reach Us Directly",
+      "email_label": "Email",
+      "phone_label": "Phone",
+      "hours_label": "Business Hours",
+      "hours_value": "Mon–Fri, 8 am–6 pm BRT",
+      "offices_title": "Our Offices",
+      "hq_label": "Headquarters",
+      "eu_label": "Europe",
+      "apac_label": "Asia-Pacific",
+      "support_title": "Customer Support",
+      "support_label": "Enterprise SLA",
+      "support_value": "24/7 for Professional & Command plans"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Quick answers to the questions we hear most often.",
+      "faq1_q": "Is there a free trial?",
+      "faq1_a": "Yes — all plans include a 14-day free trial with no credit card required. You get full access to the platform during the trial.",
+      "faq2_q": "How quickly can we get onboarded?",
+      "faq2_a": "Most teams are fully onboarded within 48 hours. Enterprise clients with custom requirements typically take 1–2 weeks.",
+      "faq3_q": "Do you support on-premises deployment?",
+      "faq3_a": "On-premises and private cloud deployments are available on our Command (Enterprise) plan. Contact sales for architecture details.",
+      "faq4_q": "What satellite constellations do you support?",
+      "faq4_a": "We ingest data from 12+ constellations including Sentinel-2, Landsat, Planet Labs, Maxar, and several commercial SAR providers.",
+      "faq5_q": "Can I use my own AI models?",
+      "faq5_a": "Yes. The platform supports BYO model deployment via our SDK. We also offer fine-tuning services on your labeled datasets.",
+      "faq6_q": "How is data privacy handled?",
+      "faq6_a": "All data is encrypted in transit and at rest. We are SOC 2 Type II certified and GDPR compliant. Your data is never shared or used to train shared models."
+    }
   }
 }
