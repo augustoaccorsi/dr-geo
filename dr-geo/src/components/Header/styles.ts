@@ -27,9 +27,23 @@ export const HomeLink = styled.a`
     }
 `;
 
-export const Nav = styled.nav`
+export const Nav = styled.nav<{ $open: boolean }>`
     display: flex;
     gap: 2.5rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 0;
+        position: fixed;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        background: ${({ theme }) => theme['base-card']};
+        border-bottom: 1px solid ${({ theme }) => theme['base-button']};
+        overflow: hidden;
+        max-height: ${({ $open }) => ($open ? '300px' : '0')};
+        transition: max-height 0.3s ease;
+    }
 `;
 
 export const NavLink = styled.a`
@@ -42,5 +56,34 @@ export const NavLink = styled.a`
 
     &:hover {
         color: ${({ theme }) => theme['purple']};
+    }
+
+    @media (max-width: 768px) {
+        padding: 1rem 2rem;
+        border-top: 1px solid ${({ theme }) => theme['base-button']};
+        display: block;
+
+        &:hover {
+            background: ${({ theme }) => theme['base-input']};
+        }
+    }
+`;
+
+export const HamburgerButton = styled.button`
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: ${({ theme }) => theme['base-subtitle']};
+    padding: 0.25rem;
+    transition: color 0.2s;
+
+    &:hover {
+        color: ${({ theme }) => theme['purple']};
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
     }
 `;

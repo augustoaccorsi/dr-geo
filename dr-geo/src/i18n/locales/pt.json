@@ -3,5 +3,30 @@
     "company": "Empresa",
     "services": "Serviços",
     "contact": "Contato"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Inteligência Geoespacial de Precisão",
+      "title": "Mapeie o Mundo,\nDecida com Dados",
+      "description": "A Dr. Geo oferece soluções geoespaciais de ponta — desde análise de imagens de satélite até inteligência de localização em tempo real — capacitando empresas a enxergar mais longe e agir com mais inteligência.",
+      "cta_primary": "Ver Serviços",
+      "cta_secondary": "Conheça o Time"
+    },
+    "stats": {
+      "projects": "Projetos Entregues",
+      "clients": "Clientes Globais",
+      "accuracy": "Precisão dos Dados",
+      "uptime": "Disponibilidade da Plataforma"
+    },
+    "highlights": {
+      "title": "Por que a Dr. Geo?",
+      "subtitle": "Combinamos dados de satélite, aprendizado de máquina e décadas de expertise para transformar geografia bruta em insights acionáveis.",
+      "card1_title": "Mapeamento em Tempo Real",
+      "card1_desc": "Fluxos de dados geoespaciais ao vivo atualizados a cada minuto, mantendo suas operações sempre sincronizadas com a realidade.",
+      "card2_title": "Análise com Inteligência Artificial",
+      "card2_desc": "Algoritmos avançados detectam padrões, anomalias e tendências em vastos conjuntos de dados geográficos automaticamente.",
+      "card3_title": "Cobertura Global",
+      "card3_desc": "Cobertura de satélite de todo o planeta com resolução submétrica, disponível sob demanda para qualquer região da Terra."
+    }
   }
 }

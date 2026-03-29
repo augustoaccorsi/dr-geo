@@ -12,9 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         color: ${(props) => props.theme['base-text']};
         -webkit-font-smoothing: antialiased;
 
-        margin-left: 10%;
-        margin-right: 10%;
-        padding-top: 6rem; /* Add space for fixed header */
+        padding-top: 6rem;
     }
 
     body, input, textarea, button {

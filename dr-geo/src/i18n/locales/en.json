@@ -3,5 +3,30 @@
     "company": "Company",
     "services": "Services",
     "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Precision Geospatial Intelligence",
+      "title": "Map the World,\nDrive Decisions",
+      "description": "Dr. Geo delivers cutting-edge geospatial solutions — from satellite imagery analysis to real-time location intelligence — empowering businesses to see further and act smarter.",
+      "cta_primary": "Explore Services",
+      "cta_secondary": "Meet the Team"
+    },
+    "stats": {
+      "projects": "Projects Delivered",
+      "clients": "Global Clients",
+      "accuracy": "Data Accuracy",
+      "uptime": "Platform Uptime"
+    },
+    "highlights": {
+      "title": "Why Dr. Geo?",
+      "subtitle": "We combine satellite data, machine learning, and decades of domain expertise to turn raw geography into actionable insight.",
+      "card1_title": "Real-Time Mapping",
+      "card1_desc": "Live geospatial data streams updated every minute, keeping your operations always in sync with the ground truth.",
+      "card2_title": "AI-Powered Analysis",
+      "card2_desc": "Advanced algorithms detect patterns, anomalies, and trends across vast geographic datasets automatically.",
+      "card3_title": "Global Coverage",
+      "card3_desc": "Full-planet satellite coverage with sub-meter resolution, available on-demand for any region on Earth."
+    }
   }
 }
