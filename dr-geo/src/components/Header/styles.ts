@@ -87,3 +87,25 @@ export const HamburgerButton = styled.button`
         align-items: center;
     }
 `;
+
+export const ThemeToggle = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 1.5px solid ${({ theme }) => theme['base-button']};
+    border-radius: 8px;
+    cursor: pointer;
+    color: ${({ theme }) => theme['base-subtitle']};
+    padding: 0.35rem;
+    transition: color 0.2s, border-color 0.2s;
+
+    &:hover {
+        color: ${({ theme }) => theme['purple']};
+        border-color: ${({ theme }) => theme['purple']};
+    }
+
+    @media (max-width: 768px) {
+        margin-right: 0.5rem;
+    }
+`;
