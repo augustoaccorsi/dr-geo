@@ -18,7 +18,7 @@ const AppContent = () => {
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/dr-geo">
             <ContextProvider>
                 <AppContent />
             </ContextProvider>

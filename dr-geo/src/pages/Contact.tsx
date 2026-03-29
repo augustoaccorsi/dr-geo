@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { TbSend, TbMail, TbPhone, TbMapPin, TbClock, TbHeadset, TbCircleCheck } from 'react-icons/tb';
+import { TbSend, TbMail, TbPhone, TbMapPin, TbClock, TbHeadset } from 'react-icons/tb';
 import {
     ContactWrapper,
     HeroSection,
@@ -12,14 +12,11 @@ import {
     FormTitle,
     FormSubtitle,
     Form,
-    FieldRow,
     Field,
     Label,
-    Input,
     Select,
     Textarea,
     SubmitButton,
-    SuccessBanner,
     InfoColumn,
     InfoCard,
     InfoCardTitle,
@@ -38,6 +35,8 @@ import {
     FaqA,
 } from './styles/Contact.styles';
 
+const CONTACT_EMAIL = 'daiana@drgeo.com.br';
+
 const faqs = [
     { qKey: 'faq1_q', aKey: 'faq1_a' },
     { qKey: 'faq2_q', aKey: 'faq2_a' },
@@ -49,23 +48,16 @@ const faqs = [
 
 const Contact = () => {
     const { t } = useTranslation();
-    const [submitted, setSubmitted] = useState(false);
-    const [form, setForm] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        company: '',
-        subject: '',
-        message: '',
-    });
+    const [form, setForm] = useState({ subject: '', message: '' });
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement | HTMLSelectElement>) => {
         setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
     };
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        setSubmitted(true);
+        const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(form.message)}`;
+        window.location.href = mailto;
     };
 
     return (
@@ -81,99 +73,42 @@ const Contact = () => {
                     <FormTitle>{t('contact.form.title')}</FormTitle>
                     <FormSubtitle>{t('contact.form.subtitle')}</FormSubtitle>
 
-                    {submitted ? (
-                        <SuccessBanner>
-                            <TbCircleCheck size={22} />
-                            {t('contact.form.success')}
-                        </SuccessBanner>
-                    ) : (
-                        <Form onSubmit={handleSubmit}>
-                            <FieldRow>
-                                <Field>
-                                    <Label htmlFor="firstName">{t('contact.form.first_name')}</Label>
-                                    <Input
-                                        id="firstName"
-                                        name="firstName"
-                                        value={form.firstName}
-                                        onChange={handleChange}
-                                        placeholder="Jane"
-                                        required
-                                    />
-                                </Field>
-                                <Field>
-                                    <Label htmlFor="lastName">{t('contact.form.last_name')}</Label>
-                                    <Input
-                                        id="lastName"
-                                        name="lastName"
-                                        value={form.lastName}
-                                        onChange={handleChange}
-                                        placeholder="Smith"
-                                        required
-                                    />
-                                </Field>
-                            </FieldRow>
+                    <Form onSubmit={handleSubmit}>
+                        <Field>
+                            <Label htmlFor="subject">{t('contact.form.subject')}</Label>
+                            <Select
+                                id="subject"
+                                name="subject"
+                                value={form.subject}
+                                onChange={handleChange}
+                                required
+                            >
+                                <option value="">{t('contact.form.subject_placeholder')}</option>
+                                <option value={t('contact.form.subject_sales')}>{t('contact.form.subject_sales')}</option>
+                                <option value={t('contact.form.subject_support')}>{t('contact.form.subject_support')}</option>
+                                <option value={t('contact.form.subject_partnership')}>{t('contact.form.subject_partnership')}</option>
+                                <option value={t('contact.form.subject_careers')}>{t('contact.form.subject_careers')}</option>
+                                <option value={t('contact.form.subject_other')}>{t('contact.form.subject_other')}</option>
+                            </Select>
+                        </Field>
 
-                            <FieldRow>
-                                <Field>
-                                    <Label htmlFor="email">{t('contact.form.email')}</Label>
-                                    <Input
-                                        id="email"
-                                        name="email"
-                                        type="email"
-                                        value={form.email}
-                                        onChange={handleChange}
-                                        placeholder="jane@company.com"
-                                        required
-                                    />
-                                </Field>
-                                <Field>
-                                    <Label htmlFor="company">{t('contact.form.company')}</Label>
-                                    <Input
-                                        id="company"
-                                        name="company"
-                                        value={form.company}
-                                        onChange={handleChange}
-                                        placeholder="Acme Corp"
-                                    />
-                                </Field>
-                            </FieldRow>
+                        <Field>
+                            <Label htmlFor="message">{t('contact.form.message')}</Label>
+                            <Textarea
+                                id="message"
+                                name="message"
+                                value={form.message}
+                                onChange={handleChange}
+                                placeholder={t('contact.form.message_placeholder')}
+                                required
+                            />
+                        </Field>
 
-                            <Field>
-                                <Label htmlFor="subject">{t('contact.form.subject')}</Label>
-                                <Select
-                                    id="subject"
-                                    name="subject"
-                                    value={form.subject}
-                                    onChange={handleChange}
-                                    required
-                                >
-                                    <option value="">{t('contact.form.subject_placeholder')}</option>
-                                    <option value="sales">{t('contact.form.subject_sales')}</option>
-                                    <option value="support">{t('contact.form.subject_support')}</option>
-                                    <option value="partnership">{t('contact.form.subject_partnership')}</option>
-                                    <option value="careers">{t('contact.form.subject_careers')}</option>
-                                    <option value="other">{t('contact.form.subject_other')}</option>
-                                </Select>
-                            </Field>
-
-                            <Field>
-                                <Label htmlFor="message">{t('contact.form.message')}</Label>
-                                <Textarea
-                                    id="message"
-                                    name="message"
-                                    value={form.message}
-                                    onChange={handleChange}
-                                    placeholder={t('contact.form.message_placeholder')}
-                                    required
-                                />
-                            </Field>
-
-                            <SubmitButton type="submit">
-                                <TbSend size={18} />
-                                {t('contact.form.submit')}
-                            </SubmitButton>
-                        </Form>
-                    )}
+                        <SubmitButton type="submit">
+                            <TbSend size={18} />
+                            {t('contact.form.submit')}
+                        </SubmitButton>
+                    </Form>
                 </FormCard>
 
                 <InfoColumn>
@@ -183,14 +118,14 @@ const Contact = () => {
                             <InfoIcon><TbMail size={20} /></InfoIcon>
                             <InfoText>
                                 <InfoLabel>{t('contact.info.email_label')}</InfoLabel>
-                                <InfoValue>hello@drgeo.io</InfoValue>
+                                <InfoValue>{CONTACT_EMAIL}</InfoValue>
                             </InfoText>
                         </InfoItem>
                         <InfoItem>
                             <InfoIcon><TbPhone size={20} /></InfoIcon>
                             <InfoText>
                                 <InfoLabel>{t('contact.info.phone_label')}</InfoLabel>
-                                <InfoValue>+1 (415) 900-4200</InfoValue>
+                                <InfoValue>+55 (11) 99999-0000</InfoValue>
                             </InfoText>
                         </InfoItem>
                         <InfoItem>
@@ -208,21 +143,14 @@ const Contact = () => {
                             <InfoIcon><TbMapPin size={20} /></InfoIcon>
                             <InfoText>
                                 <InfoLabel>{t('contact.info.hq_label')}</InfoLabel>
-                                <InfoValue>Av. Paulista 1374, São Paulo, BR</InfoValue>
+                                <InfoValue>São Paulo, SP — Brasil</InfoValue>
                             </InfoText>
                         </InfoItem>
                         <InfoItem>
                             <InfoIcon><TbMapPin size={20} /></InfoIcon>
                             <InfoText>
                                 <InfoLabel>{t('contact.info.eu_label')}</InfoLabel>
-                                <InfoValue>Herengracht 412, Amsterdam, NL</InfoValue>
-                            </InfoText>
-                        </InfoItem>
-                        <InfoItem>
-                            <InfoIcon><TbMapPin size={20} /></InfoIcon>
-                            <InfoText>
-                                <InfoLabel>{t('contact.info.apac_label')}</InfoLabel>
-                                <InfoValue>1 Raffles Place, Singapore, SG</InfoValue>
+                                <InfoValue>{t('contact.info.field_coverage')}</InfoValue>
                             </InfoText>
                         </InfoItem>
                     </InfoCard>
