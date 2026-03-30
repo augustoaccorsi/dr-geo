@@ -24,23 +24,20 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
-          cache-dependency-path: dr-geo/package-lock.json
 
       - name: Install dependencies
         run: npm ci
-        working-directory: dr-geo
 
       - name: Build
         run: npm run build
-        working-directory: dr-geo
 
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dr-geo/dist
+          path: dist
 
       - uses: actions/deploy-pages@v4
         id: deployment
