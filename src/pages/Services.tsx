@@ -1,13 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import {
-    TbSatellite,
-    TbRadar,
-    TbPolygon,
-    TbRoute,
-    TbCloudDataConnection,
-    TbPresentationAnalytics,
     TbWorldCode,
     TbZoomScan,
+    TbLeaf,
+    TbHammer,
+    TbMap,
+    TbPick,
 } from 'react-icons/tb';
 import {
     ServicesWrapper,
@@ -19,13 +17,13 @@ import {
     SectionTitle,
     SectionSubtitle,
     ServicesSection,
-    ServicesGrid,
-    ServiceCard,
-    ServiceIcon,
-    ServiceTitle,
-    ServiceDesc,
-    ServiceTags,
-    Tag,
+    CategoriesGrid,
+    CategoryCard,
+    CategoryIcon,
+    CategoryTitle,
+    CategoryDesc,
+    CategoryList,
+    CategoryItem,
     FeaturesSection,
     FeatureRow,
     FeatureVisual,
@@ -35,17 +33,6 @@ import {
     FeatureDesc,
     FeatureBullets,
     Bullet,
-    PricingSection,
-    PricingGrid,
-    PricingCard,
-    PricingBadge,
-    PricingTier,
-    PricingName,
-    PricingPrice,
-    PricingDesc,
-    PricingFeatures,
-    PricingFeature,
-    PricingButton,
     CtaSection,
     CtaTitle,
     CtaSubtitle,
@@ -54,42 +41,30 @@ import {
     SecondaryButton,
 } from './styles/Services.styles';
 
-const services = [
+const categories = [
     {
-        icon: <TbSatellite size={32} />,
-        titleKey: 'svc1_title',
-        descKey: 'svc1_desc',
-        tags: ['Satellite', 'Multispectral', 'SAR'],
+        icon: <TbLeaf size={36} />,
+        titleKey: 'cat1_title',
+        descKey: 'cat1_desc',
+        items: ['cat1_s1', 'cat1_s2', 'cat1_s3', 'cat1_s4', 'cat1_s5'],
     },
     {
-        icon: <TbRadar size={32} />,
-        titleKey: 'svc2_title',
-        descKey: 'svc2_desc',
-        tags: ['Real-Time', 'Streaming', 'Alerts'],
+        icon: <TbHammer size={36} />,
+        titleKey: 'cat2_title',
+        descKey: 'cat2_desc',
+        items: ['cat2_s1', 'cat2_s2', 'cat2_s3', 'cat2_s4', 'cat2_s5'],
     },
     {
-        icon: <TbPolygon size={32} />,
-        titleKey: 'svc3_title',
-        descKey: 'svc3_desc',
-        tags: ['ML', 'Change Detection', 'Anomaly'],
+        icon: <TbMap size={36} />,
+        titleKey: 'cat3_title',
+        descKey: 'cat3_desc',
+        items: ['cat3_s1', 'cat3_s2', 'cat3_s3', 'cat3_s4'],
     },
     {
-        icon: <TbRoute size={32} />,
-        titleKey: 'svc4_title',
-        descKey: 'svc4_desc',
-        tags: ['Routing', 'Logistics', 'Fleet'],
-    },
-    {
-        icon: <TbCloudDataConnection size={32} />,
-        titleKey: 'svc5_title',
-        descKey: 'svc5_desc',
-        tags: ['API', 'Webhooks', 'Cloud'],
-    },
-    {
-        icon: <TbPresentationAnalytics size={32} />,
-        titleKey: 'svc6_title',
-        descKey: 'svc6_desc',
-        tags: ['Dashboards', 'Reports', 'BI'],
+        icon: <TbPick size={36} />,
+        titleKey: 'cat4_title',
+        descKey: 'cat4_desc',
+        items: ['cat4_s1', 'cat4_s2', 'cat4_s3'],
     },
 ];
 
@@ -112,36 +87,6 @@ const features = [
     },
 ];
 
-const plans = [
-    {
-        tierKey: 'plan1_tier',
-        nameKey: 'plan1_name',
-        price: '$490',
-        descKey: 'plan1_desc',
-        features: ['plan1_f1', 'plan1_f2', 'plan1_f3', 'plan1_f4'],
-        featured: false,
-        badge: false,
-    },
-    {
-        tierKey: 'plan2_tier',
-        nameKey: 'plan2_name',
-        price: '$1,290',
-        descKey: 'plan2_desc',
-        features: ['plan2_f1', 'plan2_f2', 'plan2_f3', 'plan2_f4', 'plan2_f5'],
-        featured: true,
-        badge: true,
-    },
-    {
-        tierKey: 'plan3_tier',
-        nameKey: 'plan3_name',
-        price: 'Custom',
-        descKey: 'plan3_desc',
-        features: ['plan3_f1', 'plan3_f2', 'plan3_f3', 'plan3_f4', 'plan3_f5'],
-        featured: false,
-        badge: false,
-    },
-];
-
 const Services = () => {
     const { t } = useTranslation();
 
@@ -158,18 +103,22 @@ const Services = () => {
                     <SectionTitle>{t('services.offerings.title')}</SectionTitle>
                     <SectionSubtitle>{t('services.offerings.subtitle')}</SectionSubtitle>
                 </SectionHeader>
-                <ServicesGrid>
-                    {services.map(({ icon, titleKey, descKey, tags }) => (
-                        <ServiceCard key={titleKey}>
-                            <ServiceIcon>{icon}</ServiceIcon>
-                            <ServiceTitle>{t(`services.offerings.${titleKey}`)}</ServiceTitle>
-                            <ServiceDesc>{t(`services.offerings.${descKey}`)}</ServiceDesc>
-                            <ServiceTags>
-                                {tags.map(tag => <Tag key={tag}>{tag}</Tag>)}
-                            </ServiceTags>
-                        </ServiceCard>
+                <CategoriesGrid>
+                    {categories.map(({ icon, titleKey, descKey, items }) => (
+                        <CategoryCard key={titleKey}>
+                            <CategoryIcon>{icon}</CategoryIcon>
+                            <CategoryTitle>{t(`services.offerings.${titleKey}`)}</CategoryTitle>
+                            <CategoryDesc>{t(`services.offerings.${descKey}`)}</CategoryDesc>
+                            <CategoryList>
+                                {items.map(item => (
+                                    <CategoryItem key={item}>
+                                        {t(`services.offerings.${item}`)}
+                                    </CategoryItem>
+                                ))}
+                            </CategoryList>
+                        </CategoryCard>
                     ))}
-                </ServicesGrid>
+                </CategoriesGrid>
             </ServicesSection>
 
             <FeaturesSection>
@@ -194,36 +143,6 @@ const Services = () => {
                 ))}
             </FeaturesSection>
 
-            <PricingSection>
-                <SectionHeader>
-                    <SectionTitle>{t('services.pricing.title')}</SectionTitle>
-                    <SectionSubtitle>{t('services.pricing.subtitle')}</SectionSubtitle>
-                </SectionHeader>
-                <PricingGrid>
-                    {plans.map(({ tierKey, nameKey, price, descKey, features: fs, featured, badge }) => (
-                        <PricingCard key={nameKey} $featured={featured}>
-                            {badge && <PricingBadge>{t('services.pricing.popular')}</PricingBadge>}
-                            <PricingTier $featured={featured}>{t(`services.pricing.${tierKey}`)}</PricingTier>
-                            <PricingName $featured={featured}>{t(`services.pricing.${nameKey}`)}</PricingName>
-                            <PricingPrice $featured={featured}>
-                                {price}<span> /mo</span>
-                            </PricingPrice>
-                            <PricingDesc $featured={featured}>{t(`services.pricing.${descKey}`)}</PricingDesc>
-                            <PricingFeatures>
-                                {fs.map(f => (
-                                    <PricingFeature key={f} $featured={featured}>
-                                        {t(`services.pricing.${f}`)}
-                                    </PricingFeature>
-                                ))}
-                            </PricingFeatures>
-                            <PricingButton to="/contact" $featured={featured}>
-                                {t('services.pricing.cta')}
-                            </PricingButton>
-                        </PricingCard>
-                    ))}
-                </PricingGrid>
-            </PricingSection>
-
             <CtaSection>
                 <CtaTitle>{t('services.cta.title')}</CtaTitle>
                 <CtaSubtitle>{t('services.cta.subtitle')}</CtaSubtitle>
@@ -237,3 +156,4 @@ const Services = () => {
 };
 
 export default Services;
+

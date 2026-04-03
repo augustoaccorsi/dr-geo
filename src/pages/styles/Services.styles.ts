@@ -73,18 +73,18 @@ export const SectionSubtitle = styled.p`
     color: ${({ theme }) => theme['base-text']};
 `;
 
-/* ── Service Cards ────────────────────────────────────── */
+/* ── Service Categories ───────────────────────────────── */
 export const ServicesSection = styled.section`
     animation: ${fadeUp} 0.6s ease 0.1s both;
 `;
 
-export const ServicesGrid = styled.div`
+export const CategoriesGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 `;
 
-export const ServiceCard = styled.div`
+export const CategoryCard = styled.div`
     background: ${({ theme }) => theme['base-card']};
     border: 1px solid ${({ theme }) => theme['base-button']};
     border-radius: 12px;
@@ -100,40 +100,48 @@ export const ServiceCard = styled.div`
     }
 `;
 
-export const ServiceIcon = styled.div`
+export const CategoryIcon = styled.div`
     color: ${({ theme }) => theme['purple']};
     line-height: 1;
 `;
 
-export const ServiceTitle = styled.h3`
-    font-size: 1.1rem;
+export const CategoryTitle = styled.h3`
+    font-size: 1.15rem;
     font-weight: 700;
     color: ${({ theme }) => theme['base-subtitle']};
 `;
 
-export const ServiceDesc = styled.p`
-    font-size: 0.95rem;
+export const CategoryDesc = styled.p`
+    font-size: 0.9rem;
     line-height: 1.6;
     color: ${({ theme }) => theme['base-text']};
-    flex: 1;
 `;
 
-export const ServiceTags = styled.div`
+export const CategoryList = styled.ul`
+    list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    flex-direction: column;
+    gap: 0.45rem;
     margin-top: 0.25rem;
 `;
 
-export const Tag = styled.span`
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    background: ${({ theme }) => theme['purple-light']};
-    color: ${({ theme }) => theme['purple-dark']};
-    padding: 0.25rem 0.6rem;
-    border-radius: 6px;
+export const CategoryItem = styled.li`
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: ${({ theme }) => theme['base-text']};
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+    &::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: ${({ theme }) => theme['purple']};
+        flex-shrink: 0;
+        margin-top: 0.45em;
+    }
 `;
 
 /* ── Feature split row ────────────────────────────────── */
@@ -221,125 +229,6 @@ export const Bullet = styled.li`
         border-radius: 50%;
         background: ${({ theme }) => theme['purple']};
         flex-shrink: 0;
-    }
-`;
-
-/* ── Pricing ──────────────────────────────────────────── */
-export const PricingSection = styled.section`
-    animation: ${fadeUp} 0.6s ease 0.3s both;
-`;
-
-export const PricingGrid = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    align-items: start;
-`;
-
-export const PricingCard = styled.div<{ $featured?: boolean }>`
-    background: ${({ theme, $featured }) => $featured ? theme['purple'] : theme['base-card']};
-    border: 2px solid ${({ theme, $featured }) => $featured ? theme['purple'] : theme['base-button']};
-    border-radius: 16px;
-    padding: 2.5rem 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    position: relative;
-    transition: transform 0.2s, box-shadow 0.2s;
-
-    &:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-    }
-`;
-
-export const PricingBadge = styled.span`
-    position: absolute;
-    top: -0.75rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background: ${({ theme }) => theme['yellow']};
-    color: ${({ theme }) => theme['base-title']};
-    font-size: 0.72rem;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 0.25rem 0.8rem;
-    border-radius: 999px;
-    white-space: nowrap;
-`;
-
-export const PricingTier = styled.span<{ $featured?: boolean }>`
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: ${({ theme, $featured }) => $featured ? 'rgba(255,255,255,0.75)' : theme['purple']};
-`;
-
-export const PricingName = styled.h3<{ $featured?: boolean }>`
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: ${({ theme, $featured }) => $featured ? '#fff' : theme['base-title']};
-`;
-
-export const PricingPrice = styled.div<{ $featured?: boolean }>`
-    font-size: 2.4rem;
-    font-weight: 800;
-    color: ${({ theme, $featured }) => $featured ? '#fff' : theme['purple']};
-    line-height: 1;
-
-    span {
-        font-size: 1rem;
-        font-weight: 500;
-        opacity: 0.7;
-    }
-`;
-
-export const PricingDesc = styled.p<{ $featured?: boolean }>`
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: ${({ theme, $featured }) => $featured ? 'rgba(255,255,255,0.8)' : theme['base-text']};
-`;
-
-export const PricingFeatures = styled.ul`
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    flex: 1;
-`;
-
-export const PricingFeature = styled.li<{ $featured?: boolean }>`
-    font-size: 0.9rem;
-    color: ${({ theme, $featured }) => $featured ? 'rgba(255,255,255,0.9)' : theme['base-text']};
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-
-    &::before {
-        content: '✓';
-        font-weight: 800;
-        color: ${({ theme, $featured }) => $featured ? '#fff' : theme['purple']};
-        flex-shrink: 0;
-    }
-`;
-
-export const PricingButton = styled(Link)<{ $featured?: boolean }>`
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 1rem;
-    text-decoration: none;
-    text-align: center;
-    transition: background 0.2s, transform 0.15s;
-    background: ${({ theme, $featured }) => $featured ? '#fff' : theme['purple']};
-    color: ${({ theme, $featured }) => $featured ? theme['purple'] : '#fff'};
-    border: 2px solid ${({ $featured }) => $featured ? '#fff' : 'transparent'};
-
-    &:hover {
-        transform: translateY(-2px);
-        opacity: 0.9;
     }
 `;
 
