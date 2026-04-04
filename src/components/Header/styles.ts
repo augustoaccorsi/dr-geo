@@ -46,10 +46,10 @@ export const Nav = styled.nav<{ $open: boolean }>`
     }
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled.a<{ $active?: boolean }>`
     font-size: 1rem;
     font-weight: 600;
-    color: ${({ theme }) => theme['base-subtitle']};
+    color: ${({ theme, $active }) => $active ? theme['purple'] : theme['base-subtitle']};
     text-decoration: none;
     cursor: pointer;
     transition: color 0.2s;

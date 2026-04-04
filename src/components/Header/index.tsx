@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { TiHome } from 'react-icons/ti';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import { TbSun, TbMoon } from 'react-icons/tb';
@@ -10,6 +10,7 @@ import { HeaderContainer, HomeLink, Nav, NavLink, HamburgerButton, ThemeToggle }
 const Header = () => {
     const { t } = useTranslation();
     const navigate = useNavigate();
+    const location = useLocation();
     const [menuOpen, setMenuOpen] = useState(false);
     const { isDarkTheme, toggleTheme } = useContext(Context) as { isDarkTheme: boolean; toggleTheme: () => void };
 
@@ -25,9 +26,9 @@ const Header = () => {
             </HomeLink>
 
             <Nav $open={menuOpen}>
-                <NavLink as="span" onClick={() => handleNavClick('/company')}>{t('header.company')}</NavLink>
-                <NavLink as="span" onClick={() => handleNavClick('/services')}>{t('header.services')}</NavLink>
-                <NavLink as="span" onClick={() => handleNavClick('/contact')}>{t('header.contact')}</NavLink>
+                <NavLink as="span" $active={location.pathname === '/company'} onClick={() => handleNavClick('/company')}>{t('header.company')}</NavLink>
+                <NavLink as="span" $active={location.pathname === '/services'} onClick={() => handleNavClick('/services')}>{t('header.services')}</NavLink>
+                <NavLink as="span" $active={location.pathname === '/contact'} onClick={() => handleNavClick('/contact')}>{t('header.contact')}</NavLink>
             </Nav>
 
             <ThemeToggle onClick={toggleTheme} aria-label="Toggle theme">

@@ -240,7 +240,7 @@ export const Timeline = styled.div`
     &::before {
         content: '';
         position: absolute;
-        left: 5.5rem;
+        left: 10.5rem;
         top: 0;
         bottom: 0;
         width: 2px;
@@ -258,7 +258,7 @@ export const Timeline = styled.div`
 
 export const TimelineItem = styled.div`
     display: grid;
-    grid-template-columns: 9rem 1fr;
+    grid-template-columns: 10.5rem 1fr;
     gap: 1.5rem;
     padding: 1.75rem 0;
     position: relative;
@@ -277,6 +277,8 @@ export const TimelineYear = styled.span`
     padding-right: 1.5rem;
     padding-top: 0.15rem;
     position: relative;
+    white-space: nowrap;
+    min-width: 10.5rem;
 
     &::after {
         content: '';

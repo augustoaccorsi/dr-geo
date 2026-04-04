@@ -60,10 +60,10 @@ const values = [
 ];
 
 const team = [
-    { initials: 'RA', nameKey: 'member1_name', roleKey: 'member1_role', bioKey: 'member1_bio' },
-    { initials: 'LC', nameKey: 'member2_name', roleKey: 'member2_role', bioKey: 'member2_bio' },
-    { initials: 'MS', nameKey: 'member3_name', roleKey: 'member3_role', bioKey: 'member3_bio' },
-    { initials: 'PV', nameKey: 'member4_name', roleKey: 'member4_role', bioKey: 'member4_bio' },
+    { initials: 'DR', nameKey: 'member1_name', roleKey: 'member1_role', bioKey: 'member1_bio' },
+    { initials: 'UN', nameKey: 'member2_name', roleKey: 'member2_role', bioKey: 'member2_bio' },
+    { initials: 'FV', nameKey: 'member3_name', roleKey: 'member3_role', bioKey: 'member3_bio' },
+    { initials: 'PM', nameKey: 'member4_name', roleKey: 'member4_role', bioKey: 'member4_bio' },
 ];
 
 const timeline = [

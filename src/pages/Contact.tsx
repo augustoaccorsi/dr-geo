@@ -35,11 +35,11 @@ import {
     FaqA,
 } from './styles/Contact.styles';
 
-const CONTACT_EMAIL = 'daiana@drgeo.com.br';
+const CONTACT_EMAIL = 'daiadaianardg@gmail.com.br';
 
 const faqs = [
     { qKey: 'faq1_q', aKey: 'faq1_a' },
-    { qKey: 'faq2_q', aKey: 'faq2_a' },
+    // { qKey: 'faq2_q', aKey: 'faq2_a' },
     { qKey: 'faq3_q', aKey: 'faq3_a' },
     { qKey: 'faq4_q', aKey: 'faq4_a' },
     { qKey: 'faq5_q', aKey: 'faq5_a' },
@@ -121,13 +121,13 @@ const Contact = () => {
                                 <InfoValue>{CONTACT_EMAIL}</InfoValue>
                             </InfoText>
                         </InfoItem>
-                        <InfoItem>
+                        {/* <InfoItem>
                             <InfoIcon><TbPhone size={20} /></InfoIcon>
                             <InfoText>
                                 <InfoLabel>{t('contact.info.phone_label')}</InfoLabel>
                                 <InfoValue>+55 (11) 99999-0000</InfoValue>
                             </InfoText>
-                        </InfoItem>
+                        </InfoItem> */}
                         <InfoItem>
                             <InfoIcon><TbClock size={20} /></InfoIcon>
                             <InfoText>
@@ -143,7 +143,7 @@ const Contact = () => {
                             <InfoIcon><TbMapPin size={20} /></InfoIcon>
                             <InfoText>
                                 <InfoLabel>{t('contact.info.hq_label')}</InfoLabel>
-                                <InfoValue>São Paulo, SP — Brasil</InfoValue>
+                                <InfoValue>Dois Irmãos, RS — Brasil</InfoValue>
                             </InfoText>
                         </InfoItem>
                         <InfoItem>
