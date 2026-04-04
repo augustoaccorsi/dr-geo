@@ -35,7 +35,7 @@ import {
     FaqA,
 } from './styles/Contact.styles';
 
-const CONTACT_EMAIL = 'daiadaianardg@gmail.com.br';
+const CONTACT_EMAIL = 'daiadaianardg@gmail.com';
 
 const faqs = [
     { qKey: 'faq1_q', aKey: 'faq1_a' },
