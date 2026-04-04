@@ -5,23 +5,6 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daiana Rodrigues - Geologia</title>
-    <script>
-      // GitHub Pages SPA: restore path from ?p= query param
-      (function() {
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect !== location.href) {
-          history.replaceState(null, null, redirect);
-        }
-        var search = location.search;
-        if (search) {
-          var p = new URLSearchParams(search).get('p');
-          if (p) {
-            history.replaceState(null, null, '/' + decodeURIComponent(p));
-          }
-        }
-      })();
-    </script>
   </head>
   <body>
     <div id="root"></div>
