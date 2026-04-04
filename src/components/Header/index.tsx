@@ -26,6 +26,7 @@ const Header = () => {
             </HomeLink>
 
             <Nav $open={menuOpen}>
+                <NavLink as="span" $active={location.pathname === '/'} onClick={() => handleNavClick('/')}>{t('header.home')}</NavLink>
                 <NavLink as="span" $active={location.pathname === '/company'} onClick={() => handleNavClick('/company')}>{t('header.company')}</NavLink>
                 <NavLink as="span" $active={location.pathname === '/services'} onClick={() => handleNavClick('/services')}>{t('header.services')}</NavLink>
                 <NavLink as="span" $active={location.pathname === '/contact'} onClick={() => handleNavClick('/contact')}>{t('header.contact')}</NavLink>
