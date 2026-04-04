@@ -35,10 +35,10 @@ import {
 } from './styles/Home.styles';
 
 const stats = [
-    { value: '500+', key: 'projects' },
-    { value: '120+', key: 'clients' },
-    { value: '99.8%', key: 'accuracy' },
-    { value: '99.9%', key: 'uptime' },
+    { value: '10+', key: 'projects' },
+    { value: '10+', key: 'clients' },
+    { value: '6', key: 'years' },
+    { value: '100%', key: 'uptime' },
 ];
 
 const cards = [
