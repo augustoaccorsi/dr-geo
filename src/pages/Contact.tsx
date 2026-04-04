@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { TbSend, TbMail, TbPhone, TbMapPin, TbClock, TbHeadset } from 'react-icons/tb';
+import { TbSend, TbMail, TbMapPin, TbClock, TbHeadset } from 'react-icons/tb';
 import {
     ContactWrapper,
     HeroSection,
