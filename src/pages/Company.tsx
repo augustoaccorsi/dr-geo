@@ -67,11 +67,13 @@ const team = [
 ];
 
 const timeline = [
-    { year: '2014', titleKey: 'tl1_title', descKey: 'tl1_desc' },
-    { year: '2016', titleKey: 'tl2_title', descKey: 'tl2_desc' },
-    { year: '2019', titleKey: 'tl3_title', descKey: 'tl3_desc' },
-    { year: '2021', titleKey: 'tl4_title', descKey: 'tl4_desc' },
-    { year: '2024', titleKey: 'tl5_title', descKey: 'tl5_desc' },
+    { startYear: '2025', endYear: null, titleKey: 'tl6_title', descKey: 'tl6_desc' },
+    { startYear: '2025', endYear: null, titleKey: 'tl7_title', descKey: 'tl7_desc' },
+    { startYear: '2024', endYear: null, titleKey: 'tl5_title', descKey: 'tl5_desc' },
+    { startYear: '2021', endYear: '2022', titleKey: 'tl4_title', descKey: 'tl4_desc' },
+    { startYear: '2020', endYear: '2023', titleKey: 'tl3_title', descKey: 'tl3_desc' },
+    { startYear: '2018', endYear: '2020', titleKey: 'tl2_title', descKey: 'tl2_desc' },
+    { startYear: '2016', endYear: '2023', titleKey: 'tl1_title', descKey: 'tl1_desc' },
 ];
 
 const Company = () => {
@@ -139,9 +141,9 @@ const Company = () => {
                     <SectionSubtitle>{t('company.timeline.subtitle')}</SectionSubtitle>
                 </SectionHeader>
                 <Timeline>
-                    {timeline.map(({ year, titleKey, descKey }) => (
-                        <TimelineItem key={year}>
-                            <TimelineYear>{year}</TimelineYear>
+                    {timeline.map(({ startYear, endYear, titleKey, descKey }) => (
+                        <TimelineItem key={titleKey}>
+                            <TimelineYear>{startYear} – {endYear ?? t('company.timeline.present')}</TimelineYear>
                             <TimelineContent>
                                 <TimelineTitle>{t(`company.timeline.${titleKey}`)}</TimelineTitle>
                                 <TimelineDesc>{t(`company.timeline.${descKey}`)}</TimelineDesc>
