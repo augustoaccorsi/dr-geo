@@ -26,17 +26,17 @@ const Header = () => {
             </HomeLink>
 
             <Nav $open={menuOpen}>
-                <NavLink as="span" $active={location.pathname === '/'} onClick={() => handleNavClick('/')}>{t('header.home')}</NavLink>
-                <NavLink as="span" $active={location.pathname === '/company'} onClick={() => handleNavClick('/company')}>{t('header.company')}</NavLink>
-                <NavLink as="span" $active={location.pathname === '/services'} onClick={() => handleNavClick('/services')}>{t('header.services')}</NavLink>
-                <NavLink as="span" $active={location.pathname === '/contact'} onClick={() => handleNavClick('/contact')}>{t('header.contact')}</NavLink>
+                <NavLink as="button" $active={location.pathname === '/'} onClick={() => handleNavClick('/')}>{t('header.home')}</NavLink>
+                <NavLink as="button" $active={location.pathname === '/company'} onClick={() => handleNavClick('/company')}>{t('header.company')}</NavLink>
+                <NavLink as="button" $active={location.pathname === '/services'} onClick={() => handleNavClick('/services')}>{t('header.services')}</NavLink>
+                <NavLink as="button" $active={location.pathname === '/contact'} onClick={() => handleNavClick('/contact')}>{t('header.contact')}</NavLink>
             </Nav>
 
             <ThemeToggle onClick={toggleTheme} aria-label="Toggle theme">
                 {isDarkTheme ? <TbSun size={22} /> : <TbMoon size={22} />}
             </ThemeToggle>
 
-            <HamburgerButton onClick={() => setMenuOpen(prev => !prev)} aria-label="Toggle menu">
+            <HamburgerButton onClick={() => setMenuOpen(prev => !prev)} aria-label={menuOpen ? t('header.close_menu') : t('header.open_menu')}>
                 {menuOpen ? <RiCloseLine size={26} /> : <RiMenu3Line size={26} />}
             </HamburgerButton>
         </HeaderContainer>

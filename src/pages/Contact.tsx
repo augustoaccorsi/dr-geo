@@ -39,7 +39,7 @@ const CONTACT_EMAIL = 'daiadaianardg@gmail.com';
 
 const faqs = [
     { qKey: 'faq1_q', aKey: 'faq1_a' },
-    // { qKey: 'faq2_q', aKey: 'faq2_a' },
+    { qKey: 'faq2_q', aKey: 'faq2_a' },
     { qKey: 'faq3_q', aKey: 'faq3_a' },
     { qKey: 'faq4_q', aKey: 'faq4_a' },
     { qKey: 'faq5_q', aKey: 'faq5_a' },
@@ -49,6 +49,7 @@ const faqs = [
 const Contact = () => {
     const { t } = useTranslation();
     const [form, setForm] = useState({ subject: '', message: '' });
+    const [submitted, setSubmitted] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement | HTMLSelectElement>) => {
         setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -58,6 +59,7 @@ const Contact = () => {
         e.preventDefault();
         const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(form.message)}`;
         window.location.href = mailto;
+        setSubmitted(true);
     };
 
     return (
@@ -108,6 +110,7 @@ const Contact = () => {
                             <TbSend size={18} />
                             {t('contact.form.submit')}
                         </SubmitButton>
+                        {submitted && <FormSubtitle>{t('contact.form.success')}</FormSubtitle>}
                     </Form>
                 </FormCard>
 
@@ -143,7 +146,7 @@ const Contact = () => {
                             <InfoIcon><TbMapPin size={20} /></InfoIcon>
                             <InfoText>
                                 <InfoLabel>{t('contact.info.hq_label')}</InfoLabel>
-                                <InfoValue>Dois Irmãos, RS — Brasil</InfoValue>
+                                <InfoValue>{t('contact.info.hq_value')}</InfoValue>
                             </InfoText>
                         </InfoItem>
                         <InfoItem>

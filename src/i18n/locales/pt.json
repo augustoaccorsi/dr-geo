@@ -3,7 +3,9 @@
     "home": "Início",
     "company": "Sobre",
     "services": "Serviços",
-    "contact": "Contato"
+    "contact": "Contato",
+    "open_menu": "Abrir menu",
+    "close_menu": "Fechar menu"
   },
   "home": {
     "hero": {
@@ -86,7 +88,7 @@
       "member2_bio": "Graduação em Geologia/Ciências da Terra pela Unisinos, com formação em geologia geral e aplicada (2016 – 2023).",
       "member3_name": "Mestrado em andamento — Feevale",
       "member3_role": "Universidade Feevale",
-      "member3_bio": "Mestrado em Ciências Ambientais pela Universidade Feevale, com previsão de conclusão em dezembro de 2026.",
+      "member3_bio": "Mestrado em Ciências Ambientais pela Universidade Feevale, com previsão de conclusão em 2027.",
       "member4_name": "Especialização em andamento — PUC Minas",
       "member4_role": "Pontifícia Universidade Católica de Minas Gerais",
       "member4_bio": "Especialização em Emissões Atmosféricas e Mudanças Climáticas, com previsão de conclusão em setembro de 2026."
@@ -208,6 +210,7 @@
       "hours_value": "Seg–Sex, 8h–18h (BRT)",
       "offices_title": "Base de operações",
       "hq_label": "Escritório",
+      "hq_value": "Dois Irmãos, RS — Brasil",
       "eu_label": "Área de atuação em campo",
       "field_coverage": "Rio Grande do Sul",
       "apac_label": "Parceiros laboratoriais",
@@ -220,8 +223,8 @@
       "subtitle": "Respostas rápidas para as perguntas que recebo com mais frequência.",
       "faq1_q": "Que tipos de projeto você aceita?",
       "faq1_a": "Trabalho com avaliações ambientais, mapeamento geológico, investigações geotécnicas, suporte à exploração mineral e elaboração de relatórios técnicos para projetos de engenharia e licenciamento.",
-      "faq2_q": "Você atua fora de São Paulo?",
-      "faq2_a": "Sim — já realizei projetos em vários estados brasileiros e posso me deslocar para campanhas de campo. Custos de deslocamento são orçados separadamente para projetos fora da Grande São Paulo.",
+      "faq2_q": "Você atua fora do Rio Grande do Sul?",
+      "faq2_a": "Sim — já realizei projetos em diferentes estados brasileiros e posso me deslocar para campanhas de campo. Custos de deslocamento são orçados separadamente para projetos fora da região metropolitana de Porto Alegre.",
       "faq3_q": "Quanto tempo leva um projeto típico?",
       "faq3_a": "Depende do escopo. Uma visita a campo e um relatório resumido podem ser entregues em 3 a 5 dias úteis. Projetos completos de investigação e relatório geralmente levam de 2 a 6 semanas.",
       "faq4_q": "Seus laudos são aceitos para licenciamento ambiental?",
@@ -231,5 +234,9 @@
       "faq6_q": "Como solicito um orçamento?",
       "faq6_a": "Me envie uma mensagem pelo formulário com uma breve descrição do seu projeto, localização do local e qualquer prazo conhecido. Responderei com uma estimativa de escopo e honorários em até um dia útil."
     }
+  },
+  "notFound": {
+    "message": "Página não encontrada.",
+    "back": "Voltar para o início"
   }
 }

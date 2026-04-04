@@ -3,7 +3,9 @@
     "home": "Home",
     "company": "About",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu"
   },
   "home": {
     "hero": {
@@ -208,6 +210,7 @@
       "hours_value": "Mon–Fri, 8 am–6 pm BRT",
       "offices_title": "Base of operations",
       "hq_label": "Office",
+      "hq_value": "Dois Irmãos, RS — Brazil",
       "eu_label": "Field coverage",
       "field_coverage": "All Brazilian states — travel quoted separately",
       "apac_label": "Laboratory partners",
@@ -220,8 +223,8 @@
       "subtitle": "Quick answers to the questions I hear most often.",
       "faq1_q": "What types of projects do you take on?",
       "faq1_a": "I work on environmental assessments, geological mapping, geotechnical investigations, mineral exploration support, and technical reporting for engineering and licensing projects.",
-      "faq2_q": "Do you work outside São Paulo?",
-      "faq2_a": "Yes — I have completed projects across multiple Brazilian states and can travel for field campaigns. Travel costs are quoted separately for projects outside the Greater São Paulo area.",
+      "faq2_q": "Do you work outside Rio Grande do Sul?",
+      "faq2_a": "Yes — I have completed projects across different Brazilian states and can travel for field campaigns. Travel costs are quoted separately for projects outside the Greater Porto Alegre area.",
       "faq3_q": "How long does a typical project take?",
       "faq3_a": "It depends on scope. A single-site visit and summary report can be delivered in 3–5 business days. Full investigation and reporting projects typically take 2–6 weeks.",
       "faq4_q": "Are your reports accepted for regulatory licensing?",
@@ -231,5 +234,9 @@
       "faq6_q": "How do I get a quote?",
       "faq6_a": "Send me a message using the form with a brief description of your project, site location, and any known timeline. I'll respond with a scope and fee estimate within one business day."
     }
+  },
+  "notFound": {
+    "message": "Page not found.",
+    "back": "Back to home"
   }
 }

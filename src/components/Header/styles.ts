@@ -22,8 +22,9 @@ export const HomeLink = styled.a`
     text-decoration: none;
     transition: color 0.2s;
 
-    &:hover {
+    &:hover, &:focus-visible {
         color: ${({ theme }) => theme['purple']};
+        outline: none;
     }
 `;
 
@@ -51,10 +52,18 @@ export const NavLink = styled.a<{ $active?: boolean }>`
     font-weight: 600;
     color: ${({ theme, $active }) => $active ? theme['purple'] : theme['base-subtitle']};
     text-decoration: none;
+    background: none;
+    border: none;
     cursor: pointer;
     transition: color 0.2s;
+    outline: none;
 
-    &:hover {
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    &:hover, &:focus-visible {
         color: ${({ theme }) => theme['purple']};
     }
 
@@ -62,8 +71,10 @@ export const NavLink = styled.a<{ $active?: boolean }>`
         padding: 1rem 2rem;
         border-top: 1px solid ${({ theme }) => theme['base-button']};
         display: block;
+        width: 100%;
+        text-align: left;
 
-        &:hover {
+        &:hover, &:focus-visible {
             background: ${({ theme }) => theme['base-input']};
         }
     }
@@ -78,8 +89,9 @@ export const HamburgerButton = styled.button`
     padding: 0.25rem;
     transition: color 0.2s;
 
-    &:hover {
+    &:hover, &:focus-visible {
         color: ${({ theme }) => theme['purple']};
+        outline: none;
     }
 
     @media (max-width: 768px) {
@@ -100,9 +112,10 @@ export const ThemeToggle = styled.button`
     padding: 0.35rem;
     transition: color 0.2s, border-color 0.2s;
 
-    &:hover {
+    &:hover, &:focus-visible {
         color: ${({ theme }) => theme['purple']};
         border-color: ${({ theme }) => theme['purple']};
+        outline: none;
     }
 
     @media (max-width: 768px) {
