@@ -18,13 +18,18 @@ export const HeaderContainer = styled.header`
 export const HomeLink = styled.a`
     display: flex;
     align-items: center;
-    color: ${({ theme }) => theme['base-subtitle']};
     text-decoration: none;
-    transition: color 0.2s;
+    outline: none;
+    flex-shrink: 0;
+`;
 
-    &:hover, &:focus-visible {
-        color: ${({ theme }) => theme['purple']};
-        outline: none;
+export const Logo = styled.img`
+    width: 180px;
+    height: auto;
+    display: block;
+
+    @media (max-width: 768px) {
+        width: 140px;
     }
 `;
 

@@ -8,8 +8,8 @@ const fadeUp = keyframes`
 export const ContactWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    padding-bottom: 4rem;
+    gap: 5rem;
+    padding-bottom: 0;
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
@@ -21,9 +21,10 @@ export const ContactWrapper = styled.div`
 export const HeroSection = styled.section`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 4rem 1rem 2rem;
+    align-items: flex-start;
+    text-align: left;
+    padding: 5rem 0 2rem;
+    max-width: 820px;
     animation: ${fadeUp} 0.6s ease both;
 `;
 
@@ -34,6 +35,7 @@ export const Tagline = styled.span`
     text-transform: uppercase;
     color: ${({ theme }) => theme['purple']};
     margin-bottom: 1rem;
+    display: block;
 `;
 
 export const HeroTitle = styled.h1`
@@ -54,7 +56,7 @@ export const HeroDescription = styled.p`
 /* ── Main layout: form + info ─────────────────────────── */
 export const ContentGrid = styled.section`
     display: grid;
-    grid-template-columns: 1fr 380px;
+    grid-template-columns: 1fr 360px;
     gap: 2rem;
     align-items: start;
     animation: ${fadeUp} 0.6s ease 0.1s both;
@@ -262,45 +264,46 @@ export const InfoValue = styled.span`
     color: ${({ theme }) => theme['base-text']};
 `;
 
-/* ── FAQ ──────────────────────────────────────────────── */
+/* ── FAQ stacked list ─────────────────────────────────── */
 export const FaqSection = styled.section`
     animation: ${fadeUp} 0.6s ease 0.2s both;
+    padding-bottom: 5rem;
 `;
 
 export const SectionHeader = styled.div`
-    text-align: center;
-    margin-bottom: 2rem;
+    text-align: left;
+    margin-bottom: 2.5rem;
 `;
 
 export const SectionTitle = styled.h2`
     font-size: 2rem;
     font-weight: 800;
     color: ${({ theme }) => theme['base-title']};
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 `;
 
 export const SectionSubtitle = styled.p`
     max-width: 600px;
-    margin: 0 auto;
     font-size: 1rem;
     line-height: 1.7;
     color: ${({ theme }) => theme['base-text']};
 `;
 
 export const FaqGrid = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.25rem;
+    display: flex;
+    flex-direction: column;
 `;
 
 export const FaqCard = styled.div`
-    background: ${({ theme }) => theme['base-card']};
-    border: 1px solid ${({ theme }) => theme['base-button']};
-    border-radius: 12px;
-    padding: 1.75rem;
+    padding: 2rem 0;
+    border-top: 1px solid ${({ theme }) => theme['base-button']};
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+
+    &:last-child {
+        border-bottom: 1px solid ${({ theme }) => theme['base-button']};
+    }
 `;
 
 export const FaqQ = styled.h3`
@@ -313,4 +316,5 @@ export const FaqA = styled.p`
     font-size: 0.93rem;
     line-height: 1.65;
     color: ${({ theme }) => theme['base-text']};
+    max-width: 720px;
 `;

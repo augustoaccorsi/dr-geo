@@ -7,6 +7,10 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html {
+        background: ${(props) => props.theme['background']};
+    }
+
     body {
         background: ${(props) => props.theme['background']};
         color: ${(props) => props.theme['base-text']};

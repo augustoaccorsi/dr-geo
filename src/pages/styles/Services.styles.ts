@@ -9,8 +9,8 @@ const fadeUp = keyframes`
 export const ServicesWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    padding-bottom: 4rem;
+    gap: 5rem;
+    padding-bottom: 0;
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
@@ -22,9 +22,10 @@ export const ServicesWrapper = styled.div`
 export const HeroSection = styled.section`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 4rem 1rem 2rem;
+    align-items: flex-start;
+    text-align: left;
+    padding: 5rem 0 2rem;
+    max-width: 820px;
     animation: ${fadeUp} 0.6s ease both;
 `;
 
@@ -35,6 +36,7 @@ export const Tagline = styled.span`
     text-transform: uppercase;
     color: ${({ theme }) => theme['purple']};
     margin-bottom: 1rem;
+    display: block;
 `;
 
 export const HeroTitle = styled.h1`
@@ -54,50 +56,56 @@ export const HeroDescription = styled.p`
 
 /* ── Shared section header ────────────────────────────── */
 export const SectionHeader = styled.div`
-    text-align: center;
-    margin-bottom: 2rem;
+    text-align: left;
+    margin-bottom: 2.5rem;
 `;
 
 export const SectionTitle = styled.h2`
     font-size: 2rem;
     font-weight: 800;
     color: ${({ theme }) => theme['base-title']};
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 `;
 
 export const SectionSubtitle = styled.p`
     max-width: 600px;
-    margin: 0 auto;
     font-size: 1rem;
     line-height: 1.7;
     color: ${({ theme }) => theme['base-text']};
 `;
 
-/* ── Service Categories ───────────────────────────────── */
+/* ── Service Categories stacked rows ─────────────────── */
 export const ServicesSection = styled.section`
     animation: ${fadeUp} 0.6s ease 0.1s both;
 `;
 
 export const CategoriesGrid = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
 `;
 
 export const CategoryCard = styled.div`
-    background: ${({ theme }) => theme['base-card']};
-    border: 1px solid ${({ theme }) => theme['base-button']};
-    border-radius: 12px;
-    padding: 2rem;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 3rem;
+    padding: 2.5rem 0;
+    border-top: 1px solid ${({ theme }) => theme['base-button']};
+    align-items: start;
+
+    &:last-child {
+        border-bottom: 1px solid ${({ theme }) => theme['base-button']};
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+`;
+
+export const CategoryLeft = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    transition: transform 0.2s, box-shadow 0.2s;
-
-    &:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-    }
 `;
 
 export const CategoryIcon = styled.div`
@@ -106,14 +114,14 @@ export const CategoryIcon = styled.div`
 `;
 
 export const CategoryTitle = styled.h3`
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: ${({ theme }) => theme['base-subtitle']};
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: ${({ theme }) => theme['base-title']};
 `;
 
 export const CategoryDesc = styled.p`
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
+    line-height: 1.65;
     color: ${({ theme }) => theme['base-text']};
 `;
 
@@ -121,17 +129,17 @@ export const CategoryList = styled.ul`
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 0.45rem;
-    margin-top: 0.25rem;
+    gap: 0.6rem;
+    padding-top: 0.5rem;
 `;
 
 export const CategoryItem = styled.li`
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     color: ${({ theme }) => theme['base-text']};
     display: flex;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 0.6rem;
 
     &::before {
         content: '';
@@ -140,45 +148,27 @@ export const CategoryItem = styled.li`
         border-radius: 50%;
         background: ${({ theme }) => theme['purple']};
         flex-shrink: 0;
-        margin-top: 0.45em;
+        margin-top: 0.5em;
     }
 `;
 
-/* ── Feature split row ────────────────────────────────── */
+/* ── Feature editorial sections ──────────────────────── */
 export const FeaturesSection = styled.section`
     animation: ${fadeUp} 0.6s ease 0.2s both;
 `;
 
 export const FeatureRow = styled.div<{ $reverse?: boolean }>`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-    padding: 2.5rem 0;
-    border-bottom: 1px solid ${({ theme }) => theme['base-button']};
+    padding: 3rem 0;
+    border-top: 1px solid ${({ theme }) => theme['base-button']};
+    max-width: 760px;
 
     &:last-child {
-        border-bottom: none;
-    }
-
-    ${({ $reverse }) => $reverse && `direction: rtl; > * { direction: ltr; }`}
-
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-        direction: ltr;
+        border-bottom: 1px solid ${({ theme }) => theme['base-button']};
     }
 `;
 
 export const FeatureVisual = styled.div`
-    background: ${({ theme }) => theme['base-card']};
-    border: 1px solid ${({ theme }) => theme['base-button']};
-    border-radius: 16px;
-    aspect-ratio: 16 / 9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: ${({ theme }) => theme['purple']};
-    font-size: 5rem;
+    display: none;
 `;
 
 export const FeatureBody = styled.div`
@@ -196,7 +186,7 @@ export const FeatureLabel = styled.span`
 `;
 
 export const FeatureTitle = styled.h3`
-    font-size: 1.6rem;
+    font-size: clamp(1.4rem, 3vw, 2rem);
     font-weight: 800;
     line-height: 1.2;
     color: ${({ theme }) => theme['base-title']};
@@ -220,41 +210,41 @@ export const Bullet = styled.li`
     color: ${({ theme }) => theme['base-text']};
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.6rem;
 
     &::before {
         content: '';
-        width: 8px;
-        height: 8px;
+        width: 6px;
+        height: 6px;
         border-radius: 50%;
         background: ${({ theme }) => theme['purple']};
         flex-shrink: 0;
     }
 `;
 
-/* ── CTA ──────────────────────────────────────────────── */
+/* ── CTA full-bleed band ──────────────────────────────── */
 export const CtaSection = styled.section`
     text-align: center;
-    background: ${({ theme }) => theme['base-card']};
-    border: 1px solid ${({ theme }) => theme['base-button']};
-    border-radius: 16px;
-    padding: 4rem 2rem;
+    background: ${({ theme }) => theme['purple']};
+    padding: 5rem 2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
     animation: ${fadeUp} 0.6s ease 0.4s both;
 `;
 
 export const CtaTitle = styled.h2`
     font-size: clamp(1.6rem, 3vw, 2.4rem);
     font-weight: 800;
-    color: ${({ theme }) => theme['base-title']};
+    color: #fff;
     margin-bottom: 1rem;
 `;
 
 export const CtaSubtitle = styled.p`
     max-width: 560px;
-    margin: 0 auto 2rem;
+    margin: 0 auto 2.5rem;
     font-size: 1rem;
     line-height: 1.7;
-    color: ${({ theme }) => theme['base-text']};
+    color: rgba(255, 255, 255, 0.85);
 `;
 
 export const CtaActions = styled.div`
@@ -267,15 +257,15 @@ export const CtaActions = styled.div`
 export const PrimaryButton = styled(Link)`
     padding: 0.8rem 2rem;
     border-radius: 8px;
-    background: ${({ theme }) => theme['purple']};
-    color: #fff;
+    background: #fff;
+    color: ${({ theme }) => theme['purple']};
     font-weight: 700;
     font-size: 1rem;
     text-decoration: none;
-    transition: background 0.2s, transform 0.15s;
+    transition: opacity 0.2s, transform 0.15s;
 
     &:hover {
-        background: ${({ theme }) => theme['purple-dark']};
+        opacity: 0.9;
         transform: translateY(-2px);
     }
 `;
@@ -283,15 +273,15 @@ export const PrimaryButton = styled(Link)`
 export const SecondaryButton = styled(Link)`
     padding: 0.8rem 2rem;
     border-radius: 8px;
-    border: 2px solid ${({ theme }) => theme['purple']};
-    color: ${({ theme }) => theme['purple']};
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    color: #fff;
     font-weight: 700;
     font-size: 1rem;
     text-decoration: none;
-    transition: background 0.2s, transform 0.15s;
+    transition: border-color 0.2s, transform 0.15s;
 
     &:hover {
-        background: ${({ theme }) => theme['purple-light']};
+        border-color: #fff;
         transform: translateY(-2px);
     }
 `;

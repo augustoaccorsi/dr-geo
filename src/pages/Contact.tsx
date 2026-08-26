@@ -12,8 +12,10 @@ import {
     FormTitle,
     FormSubtitle,
     Form,
+    FieldRow,
     Field,
     Label,
+    Input,
     Select,
     Textarea,
     SubmitButton,
@@ -48,16 +50,20 @@ const faqs = [
 
 const Contact = () => {
     const { t } = useTranslation();
-    const [form, setForm] = useState({ subject: '', message: '' });
+    const [form, setForm] = useState({ first_name: '', last_name: '', email: '', subject: '', message: '' });
     const [submitted, setSubmitted] = useState(false);
 
-    const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement | HTMLSelectElement>) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
     };
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(form.message)}`;
+        const name = `${form.first_name} ${form.last_name}`.trim();
+        const body = name
+            ? `From: ${name} <${form.email}>\n\n${form.message}`
+            : form.message;
+        const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailto;
         setSubmitted(true);
     };
@@ -76,6 +82,41 @@ const Contact = () => {
                     <FormSubtitle>{t('contact.form.subtitle')}</FormSubtitle>
 
                     <Form onSubmit={handleSubmit}>
+                        <FieldRow>
+                            <Field>
+                                <Label htmlFor="first_name">{t('contact.form.first_name')}</Label>
+                                <Input
+                                    id="first_name"
+                                    name="first_name"
+                                    value={form.first_name}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </Field>
+                            <Field>
+                                <Label htmlFor="last_name">{t('contact.form.last_name')}</Label>
+                                <Input
+                                    id="last_name"
+                                    name="last_name"
+                                    value={form.last_name}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </Field>
+                        </FieldRow>
+
+                        <Field>
+                            <Label htmlFor="email">{t('contact.form.email')}</Label>
+                            <Input
+                                id="email"
+                                name="email"
+                                type="email"
+                                value={form.email}
+                                onChange={handleChange}
+                                required
+                            />
+                        </Field>
+
                         <Field>
                             <Label htmlFor="subject">{t('contact.form.subject')}</Label>
                             <Select
@@ -124,13 +165,6 @@ const Contact = () => {
                                 <InfoValue>{CONTACT_EMAIL}</InfoValue>
                             </InfoText>
                         </InfoItem>
-                        {/* <InfoItem>
-                            <InfoIcon><TbPhone size={20} /></InfoIcon>
-                            <InfoText>
-                                <InfoLabel>{t('contact.info.phone_label')}</InfoLabel>
-                                <InfoValue>+55 (11) 99999-0000</InfoValue>
-                            </InfoText>
-                        </InfoItem> */}
                         <InfoItem>
                             <InfoIcon><TbClock size={20} /></InfoIcon>
                             <InfoText>

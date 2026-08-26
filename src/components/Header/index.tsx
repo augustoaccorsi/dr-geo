@@ -1,11 +1,10 @@
 import { useContext, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { TiHome } from 'react-icons/ti';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import { TbSun, TbMoon } from 'react-icons/tb';
 import { Context } from '../../context/Context';
-import { HeaderContainer, HomeLink, Nav, NavLink, HamburgerButton, ThemeToggle } from './styles';
+import { HeaderContainer, HomeLink, Logo, Nav, NavLink, HamburgerButton, ThemeToggle } from './styles';
 
 const Header = () => {
     const { t } = useTranslation();
@@ -22,7 +21,10 @@ const Header = () => {
     return (
         <HeaderContainer>
             <HomeLink as={Link} to="/">
-                <TiHome size={28} />
+                <Logo
+                    src={`${import.meta.env.BASE_URL}logos/${isDarkTheme ? 'horixontal-dark.png' : 'horixontal-light.png.png'}`}
+                    alt="Dr. Geo"
+                />
             </HomeLink>
 
             <Nav $open={menuOpen}>

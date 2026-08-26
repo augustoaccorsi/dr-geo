@@ -1,24 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import {
-    TbTarget,
-    TbEye,
-    TbShieldCheck,
-    TbUsers,
-    TbBulb,
-    TbLeaf,
-    TbHeartHandshake,
-} from 'react-icons/tb';
-import {
     CompanyWrapper,
     HeroSection,
     Tagline,
     HeroTitle,
     HeroDescription,
     MissionSection,
-    MissionCard,
-    MissionIcon,
-    MissionLabel,
-    MissionTitle,
+    PullQuote,
+    PullQuoteAttrib,
     MissionText,
     ValuesSection,
     SectionHeader,
@@ -26,16 +15,16 @@ import {
     SectionSubtitle,
     ValuesGrid,
     ValueCard,
-    ValueIcon,
+    ValueNumber,
+    ValueContent,
     ValueTitle,
     ValueDesc,
     TeamSection,
-    TeamGrid,
-    TeamCard,
-    Avatar,
-    MemberName,
-    MemberRole,
-    MemberBio,
+    CredentialGrid,
+    CredentialRow,
+    CredentialLabel,
+    CredentialName,
+    CredentialDesc,
     TimelineSection,
     Timeline,
     TimelineItem,
@@ -52,28 +41,28 @@ import {
 } from './styles/Company.styles';
 
 const values = [
-    { icon: <TbShieldCheck size={30} />, titleKey: 'value1_title', descKey: 'value1_desc' },
-    { icon: <TbBulb size={30} />,        titleKey: 'value2_title', descKey: 'value2_desc' },
-    { icon: <TbUsers size={30} />,       titleKey: 'value3_title', descKey: 'value3_desc' },
-    { icon: <TbLeaf size={30} />,        titleKey: 'value4_title', descKey: 'value4_desc' },
-    { icon: <TbHeartHandshake size={30} />,   titleKey: 'value5_title', descKey: 'value5_desc' },
+    { num: '01', titleKey: 'value1_title', descKey: 'value1_desc' },
+    { num: '02', titleKey: 'value2_title', descKey: 'value2_desc' },
+    { num: '03', titleKey: 'value3_title', descKey: 'value3_desc' },
+    { num: '04', titleKey: 'value4_title', descKey: 'value4_desc' },
+    { num: '05', titleKey: 'value5_title', descKey: 'value5_desc' },
 ];
 
-const team = [
-    { initials: 'DR', nameKey: 'member1_name', roleKey: 'member1_role', bioKey: 'member1_bio' },
-    { initials: 'UN', nameKey: 'member2_name', roleKey: 'member2_role', bioKey: 'member2_bio' },
-    { initials: 'FV', nameKey: 'member3_name', roleKey: 'member3_role', bioKey: 'member3_bio' },
-    { initials: 'PM', nameKey: 'member4_name', roleKey: 'member4_role', bioKey: 'member4_bio' },
+const credentials = [
+    { nameKey: 'member1_name', roleKey: 'member1_role', bioKey: 'member1_bio' },
+    { nameKey: 'member2_name', roleKey: 'member2_role', bioKey: 'member2_bio' },
+    { nameKey: 'member3_name', roleKey: 'member3_role', bioKey: 'member3_bio' },
+    { nameKey: 'member4_name', roleKey: 'member4_role', bioKey: 'member4_bio' },
 ];
 
 const timeline = [
-    { startYear: '2025', endYear: null, titleKey: 'tl6_title', descKey: 'tl6_desc' },
-    { startYear: '2025', endYear: null, titleKey: 'tl7_title', descKey: 'tl7_desc' },
-    { startYear: '2024', endYear: null, titleKey: 'tl5_title', descKey: 'tl5_desc' },
-    { startYear: '2021', endYear: '2022', titleKey: 'tl4_title', descKey: 'tl4_desc' },
-    { startYear: '2020', endYear: '2023', titleKey: 'tl3_title', descKey: 'tl3_desc' },
-    { startYear: '2018', endYear: '2020', titleKey: 'tl2_title', descKey: 'tl2_desc' },
     { startYear: '2016', endYear: '2023', titleKey: 'tl1_title', descKey: 'tl1_desc' },
+    { startYear: '2018', endYear: '2020', titleKey: 'tl2_title', descKey: 'tl2_desc' },
+    { startYear: '2020', endYear: '2023', titleKey: 'tl3_title', descKey: 'tl3_desc' },
+    { startYear: '2021', endYear: '2022', titleKey: 'tl4_title', descKey: 'tl4_desc' },
+    { startYear: '2024', endYear: null,   titleKey: 'tl5_title', descKey: 'tl5_desc' },
+    { startYear: '2025', endYear: null,   titleKey: 'tl6_title', descKey: 'tl6_desc' },
+    { startYear: '2025', endYear: null,   titleKey: 'tl7_title', descKey: 'tl7_desc' },
 ];
 
 const Company = () => {
@@ -88,18 +77,9 @@ const Company = () => {
             </HeroSection>
 
             <MissionSection>
-                <MissionCard>
-                    <MissionIcon><TbTarget size={36} /></MissionIcon>
-                    <MissionLabel>{t('company.mission.label')}</MissionLabel>
-                    <MissionTitle>{t('company.mission.title')}</MissionTitle>
-                    <MissionText>{t('company.mission.text')}</MissionText>
-                </MissionCard>
-                <MissionCard>
-                    <MissionIcon><TbEye size={36} /></MissionIcon>
-                    <MissionLabel>{t('company.vision.label')}</MissionLabel>
-                    <MissionTitle>{t('company.vision.title')}</MissionTitle>
-                    <MissionText>{t('company.vision.text')}</MissionText>
-                </MissionCard>
+                <PullQuote>{t('company.mission.text')}</PullQuote>
+                <PullQuoteAttrib>{t('company.mission.label')}</PullQuoteAttrib>
+                <MissionText>{t('company.vision.text')}</MissionText>
             </MissionSection>
 
             <ValuesSection>
@@ -108,11 +88,13 @@ const Company = () => {
                     <SectionSubtitle>{t('company.values.subtitle')}</SectionSubtitle>
                 </SectionHeader>
                 <ValuesGrid>
-                    {values.map(({ icon, titleKey, descKey }) => (
+                    {values.map(({ num, titleKey, descKey }) => (
                         <ValueCard key={titleKey}>
-                            <ValueIcon>{icon}</ValueIcon>
-                            <ValueTitle>{t(`company.values.${titleKey}`)}</ValueTitle>
-                            <ValueDesc>{t(`company.values.${descKey}`)}</ValueDesc>
+                            <ValueNumber>{num}</ValueNumber>
+                            <ValueContent>
+                                <ValueTitle>{t(`company.values.${titleKey}`)}</ValueTitle>
+                                <ValueDesc>{t(`company.values.${descKey}`)}</ValueDesc>
+                            </ValueContent>
                         </ValueCard>
                     ))}
                 </ValuesGrid>
@@ -123,16 +105,17 @@ const Company = () => {
                     <SectionTitle>{t('company.team.title')}</SectionTitle>
                     <SectionSubtitle>{t('company.team.subtitle')}</SectionSubtitle>
                 </SectionHeader>
-                <TeamGrid>
-                    {team.map(({ initials, nameKey, roleKey, bioKey }) => (
-                        <TeamCard key={nameKey}>
-                            <Avatar>{initials}</Avatar>
-                            <MemberName>{t(`company.team.${nameKey}`)}</MemberName>
-                            <MemberRole>{t(`company.team.${roleKey}`)}</MemberRole>
-                            <MemberBio>{t(`company.team.${bioKey}`)}</MemberBio>
-                        </TeamCard>
+                <CredentialGrid>
+                    {credentials.map(({ nameKey, roleKey, bioKey }) => (
+                        <CredentialRow key={nameKey}>
+                            <CredentialLabel>{t(`company.team.${roleKey}`)}</CredentialLabel>
+                            <div>
+                                <CredentialName>{t(`company.team.${nameKey}`)}</CredentialName>
+                                <CredentialDesc>{t(`company.team.${bioKey}`)}</CredentialDesc>
+                            </div>
+                        </CredentialRow>
                     ))}
-                </TeamGrid>
+                </CredentialGrid>
             </TeamSection>
 
             <TimelineSection>
@@ -143,7 +126,9 @@ const Company = () => {
                 <Timeline>
                     {timeline.map(({ startYear, endYear, titleKey, descKey }) => (
                         <TimelineItem key={titleKey}>
-                            <TimelineYear>{startYear} – {endYear ?? t('company.timeline.present')}</TimelineYear>
+                            <TimelineYear>
+                                {startYear} – {endYear ?? t('company.timeline.present')}
+                            </TimelineYear>
                             <TimelineContent>
                                 <TimelineTitle>{t(`company.timeline.${titleKey}`)}</TimelineTitle>
                                 <TimelineDesc>{t(`company.timeline.${descKey}`)}</TimelineDesc>

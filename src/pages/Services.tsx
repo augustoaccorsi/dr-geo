@@ -1,7 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import {
-    TbWorldCode,
-    TbZoomScan,
     TbLeaf,
     TbHammer,
     TbMap,
@@ -19,6 +17,7 @@ import {
     ServicesSection,
     CategoriesGrid,
     CategoryCard,
+    CategoryLeft,
     CategoryIcon,
     CategoryTitle,
     CategoryDesc,
@@ -26,7 +25,6 @@ import {
     CategoryItem,
     FeaturesSection,
     FeatureRow,
-    FeatureVisual,
     FeatureBody,
     FeatureLabel,
     FeatureTitle,
@@ -43,25 +41,25 @@ import {
 
 const categories = [
     {
-        icon: <TbLeaf size={36} />,
+        icon: <TbLeaf size={32} />,
         titleKey: 'cat1_title',
         descKey: 'cat1_desc',
         items: ['cat1_s1', 'cat1_s2', 'cat1_s3', 'cat1_s4', 'cat1_s5'],
     },
     {
-        icon: <TbHammer size={36} />,
+        icon: <TbHammer size={32} />,
         titleKey: 'cat2_title',
         descKey: 'cat2_desc',
         items: ['cat2_s1', 'cat2_s2', 'cat2_s3', 'cat2_s4', 'cat2_s5'],
     },
     {
-        icon: <TbMap size={36} />,
+        icon: <TbMap size={32} />,
         titleKey: 'cat3_title',
         descKey: 'cat3_desc',
         items: ['cat3_s1', 'cat3_s2', 'cat3_s3', 'cat3_s4'],
     },
     {
-        icon: <TbPick size={36} />,
+        icon: <TbPick size={32} />,
         titleKey: 'cat4_title',
         descKey: 'cat4_desc',
         items: ['cat4_s1', 'cat4_s2', 'cat4_s3'],
@@ -70,20 +68,16 @@ const categories = [
 
 const features = [
     {
-        icon: <TbWorldCode size={72} />,
         labelKey: 'feat1_label',
         titleKey: 'feat1_title',
         descKey: 'feat1_desc',
         bullets: ['feat1_b1', 'feat1_b2', 'feat1_b3'],
-        reverse: false,
     },
     {
-        icon: <TbZoomScan size={72} />,
         labelKey: 'feat2_label',
         titleKey: 'feat2_title',
         descKey: 'feat2_desc',
         bullets: ['feat2_b1', 'feat2_b2', 'feat2_b3'],
-        reverse: true,
     },
 ];
 
@@ -106,9 +100,11 @@ const Services = () => {
                 <CategoriesGrid>
                     {categories.map(({ icon, titleKey, descKey, items }) => (
                         <CategoryCard key={titleKey}>
-                            <CategoryIcon>{icon}</CategoryIcon>
-                            <CategoryTitle>{t(`services.offerings.${titleKey}`)}</CategoryTitle>
-                            <CategoryDesc>{t(`services.offerings.${descKey}`)}</CategoryDesc>
+                            <CategoryLeft>
+                                <CategoryIcon>{icon}</CategoryIcon>
+                                <CategoryTitle>{t(`services.offerings.${titleKey}`)}</CategoryTitle>
+                                <CategoryDesc>{t(`services.offerings.${descKey}`)}</CategoryDesc>
+                            </CategoryLeft>
                             <CategoryList>
                                 {items.map(item => (
                                     <CategoryItem key={item}>
@@ -126,9 +122,8 @@ const Services = () => {
                     <SectionTitle>{t('services.features.title')}</SectionTitle>
                     <SectionSubtitle>{t('services.features.subtitle')}</SectionSubtitle>
                 </SectionHeader>
-                {features.map(({ icon, labelKey, titleKey, descKey, bullets, reverse }) => (
-                    <FeatureRow key={titleKey} $reverse={reverse}>
-                        <FeatureVisual>{icon}</FeatureVisual>
+                {features.map(({ labelKey, titleKey, descKey, bullets }) => (
+                    <FeatureRow key={titleKey}>
                         <FeatureBody>
                             <FeatureLabel>{t(`services.features.${labelKey}`)}</FeatureLabel>
                             <FeatureTitle>{t(`services.features.${titleKey}`)}</FeatureTitle>
@@ -156,4 +151,3 @@ const Services = () => {
 };
 
 export default Services;
-
