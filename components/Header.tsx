@@ -37,7 +37,7 @@ export default function Header() {
           <img
             src={scrolled ? '/logos/horixontal-light.png.png' : '/logos/horixontal-dark.png'}
             alt="Dr. Geo"
-            className="h-7"
+            className="h-28"
           />
         </a>
 
