@@ -8,11 +8,11 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center hero-pattern bg-[#0C0C0C]"
+      className="relative min-h-screen flex flex-col justify-center hero-pattern bg-[#1C1814]"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-28 pb-20">
         <div className="max-w-3xl">
-          <p className="text-xs font-medium tracking-[0.2em] uppercase text-neutral-500 mb-7">
+          <p className="text-xs font-medium tracking-[0.2em] uppercase text-amber-400 mb-7">
             {t('home.hero.tagline')}
           </p>
           <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-medium text-white leading-[1.04] tracking-[-0.03em] mb-7 whitespace-pre-line">

@@ -11,7 +11,7 @@ export default function Process() {
   const { t } = useTranslation()
 
   return (
-    <section id="process" className="bg-[#0C0C0C] hero-pattern py-24 lg:py-32">
+    <section id="process" className="bg-[#1C1814] hero-pattern py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-16 max-w-xl">
           <h2 className="text-4xl lg:text-5xl font-medium tracking-[-0.03em] text-white leading-[1.1] mb-4">

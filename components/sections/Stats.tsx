@@ -17,7 +17,7 @@ export default function Stats() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
           {stats.map(({ value, key }) => (
             <div key={key}>
-              <p className="text-4xl lg:text-5xl font-medium tracking-[-0.04em] text-neutral-900 mb-1.5">
+              <p className="text-4xl lg:text-5xl font-medium tracking-[-0.04em] text-amber-700 mb-1.5">
                 {value}
               </p>
               <p className="text-sm text-neutral-500 tracking-tight">

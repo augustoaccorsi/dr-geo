@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           <a href="#hero">
-            <img src="/logos/horixontal-dark.png" alt="Dr. Geo" className="h-28" />
+            <img src="/logos/horizontal-dark.png" alt="Dr. Geo" className="h-28" />
           </a>
 
           <nav className="flex flex-wrap gap-7">

@@ -16,7 +16,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section header */}
         <div className="mb-16 max-w-2xl">
-          <p className="text-xs font-medium tracking-[0.18em] uppercase text-neutral-400 mb-5">
+          <p className="text-xs font-medium tracking-[0.18em] uppercase text-amber-600 mb-5">
             {t('header.company')}
           </p>
           <h2 className="text-4xl lg:text-5xl font-medium tracking-[-0.03em] text-neutral-900 leading-[1.1] mb-5">
@@ -50,7 +50,7 @@ export default function About() {
         {/* Mission / bio strip */}
         <div className="grid lg:grid-cols-2 gap-12 border-t border-neutral-200 pt-16">
           <div>
-            <p className="text-xs font-medium tracking-[0.18em] uppercase text-neutral-400 mb-4">
+            <p className="text-xs font-medium tracking-[0.18em] uppercase text-amber-600 mb-4">
               {t('company.mission.label')}
             </p>
             <p className="text-2xl font-medium tracking-[-0.02em] text-neutral-900 leading-snug">

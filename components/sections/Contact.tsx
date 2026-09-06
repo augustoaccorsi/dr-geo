@@ -33,7 +33,7 @@ export default function Contact() {
     <section id="contact" className="bg-[#F5F5F5] py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-16">
-          <p className="text-xs font-medium tracking-[0.18em] uppercase text-neutral-400 mb-5">
+          <p className="text-xs font-medium tracking-[0.18em] uppercase text-amber-600 mb-5">
             {t('contact.hero.tagline')}
           </p>
           <h2 className="text-4xl lg:text-5xl font-medium tracking-[-0.03em] text-neutral-900 leading-[1.1] whitespace-pre-line">
