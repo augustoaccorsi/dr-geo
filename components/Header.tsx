@@ -44,7 +44,7 @@ export default function Header() {
         {/* Logo */}
         <a href="#hero" className="flex-shrink-0">
           <img
-            src={scrolled ? '/logos/horizontal-light.png' : '/logos/horizontal-dark.png'}
+            src={scrolled && theme !== 'dark' ? '/logos/horizontal-light.png' : '/logos/horizontal-dark.png'}
             alt="Dr. Geo"
             className="h-28"
           />
