@@ -9,7 +9,7 @@
   },
   "home": {
     "hero": {
-      "tagline": "Daiana Rodrigues — Geologist",
+      "tagline": "Daiana Rodrigues, Geologist",
       "title": "Reading the Earth,\none layer at a time",
       "description": "Geological mapping, environmental consulting, soil and rock analysis, and field surveys with scientific rigor and practical results.",
       "cta_primary": "Explore services",
@@ -23,9 +23,9 @@
     },
     "highlights": {
       "title": "Why work with Daiana?",
-      "subtitle": "Years of fieldwork, laboratory analysis, and technical reporting — combined with a commitment to clear communication and reliable results.",
+      "subtitle": "Years of fieldwork, laboratory analysis, and technical reporting, combined with a commitment to clear communication and reliable results.",
       "card1_title": "Field expertise",
-      "card1_desc": "Direct field experience across diverse geological settings — from urban soil surveys to remote rock outcrop mapping.",
+      "card1_desc": "Direct field experience across diverse geological settings, from urban soil surveys to remote rock outcrop mapping.",
       "card2_title": "Technical precision",
       "card2_desc": "Rigorous sampling methodology and lab-validated analysis ensuring every result you receive is accurate and defensible.",
       "card3_title": "Clear reporting",
@@ -39,11 +39,11 @@
       "step2_title": "Field & lab work",
       "step2_desc": "I conduct the necessary field surveys, collect samples, and perform or coordinate laboratory analyses with accredited partners.",
       "step3_title": "Report & support",
-      "step3_desc": "You receive a clear technical report with findings, interpretations, and recommendations — and I remain available for follow-up questions."
+      "step3_desc": "You receive a clear technical report with findings, interpretations, and recommendations, and I remain available for follow-up questions."
     },
     "cta": {
       "title": "Have a project that needs a geologist?",
-      "subtitle": "Get in touch and let's discuss how I can help — from a quick consultation to a full field campaign.",
+      "subtitle": "Get in touch and let's discuss how I can help, from a quick consultation to a full field campaign.",
       "button": "Contact me"
     }
   },
@@ -56,7 +56,7 @@
     "mission": {
       "label": "Mission",
       "title": "Bring geological clarity to every project",
-      "text": "I exist to help clients make informed decisions about land, soil, and subsurface conditions — providing the geological intelligence that reduces risk and drives sustainable outcomes."
+      "text": "I exist to help clients make informed decisions about land, soil, and subsurface conditions, providing the geological intelligence that reduces risk and drives sustainable outcomes."
     },
     "vision": {
       "label": "Vision",
@@ -71,7 +71,7 @@
       "value2_title": "Field-first mindset",
       "value2_desc": "No desk-based assumption replaces boots on the ground. I prioritize direct observation and hands-on data collection at every stage.",
       "value3_title": "Client transparency",
-      "value3_desc": "You'll always know what I'm doing, why, and what it means. No black boxes — just clear communication throughout the engagement.",
+      "value3_desc": "You'll always know what I'm doing, why, and what it means. No black boxes, just clear communication throughout the engagement.",
       "value4_title": "Environmental responsibility",
       "value4_desc": "I conduct all fieldwork with minimal environmental disturbance and full compliance with applicable regulations and best practices.",
       "value5_title": "Continuous learning",
@@ -81,40 +81,40 @@
       "title": "Credentials & background",
       "subtitle": "A professional profile built on academic training, field experience, and ongoing development.",
       "member1_name": "Daiana Rodrigues",
-      "member1_role": "Geologist — Founder",
+      "member1_role": "Geologist, Founder",
       "member1_bio": "BSc in Geology with specialization in environmental and applied geology. Registered with the regional geology council (CREA).",
-      "member2_name": "BSc in Geology — Unisinos",
+      "member2_name": "BSc in Geology, Unisinos",
       "member2_role": "University of Vale do Rio dos Sinos",
       "member2_bio": "Degree in Geology/Earth Science from Unisinos, with training in general and applied geology (2016 – 2023).",
-      "member3_name": "Master's in progress — Feevale",
+      "member3_name": "Master's in progress, Feevale",
       "member3_role": "Universidade Feevale",
       "member3_bio": "MSc in Environmental Science at Universidade Feevale, expected completion in 2027.",
-      "member4_name": "Specialisation in progress — PUC Minas",
+      "member4_name": "Specialisation in progress, PUC Minas",
       "member4_role": "Pontifical Catholic University of Minas Gerais",
       "member4_bio": "Specialisation in Atmospheric Emissions and Climate Change, expected completion September 2026."
     },
     "timeline": {
       "title": "My journey",
       "present": "present",
-      "subtitle": "From the first geology class to today — a path of fieldwork, research, and continuous growth.",
-      "tl1_title": "BSc in Geology — Unisinos",
+      "subtitle": "From the first geology class to today, a path of fieldwork, research, and continuous growth.",
+      "tl1_title": "BSc in Geology, Unisinos",
       "tl1_desc": "Graduated in Geology/Earth Science from the University of Vale do Rio dos Sinos, with training in general and applied geology.",
-      "tl2_title": "First internship — Água & Terra",
+      "tl2_title": "First internship, Água & Terra",
       "tl2_desc": "Started professional life assisting with licensing reports for mining, technical reports for urban land subdivisions, environmental permits, and field campaigns for geological surveys.",
-      "tl3_title": "Internship — Ecoplan Engenharia",
+      "tl3_title": "Internship, Ecoplan Engenharia",
       "tl3_desc": "Two stints at Ecoplan producing geological, geomorphological, pedological and hydrogeological reports and maps for engineering projects including bridges and highways, alongside erosion-monitoring support on federal roads.",
-      "tl4_title": "Scientific initiation grant — CNPq/Unisinos",
+      "tl4_title": "Scientific initiation grant, CNPq/Unisinos",
       "tl4_desc": "Research scholarship developing a data dashboard for flood-risk area monitoring in the Vale do Rio Taquari region.",
-      "tl5_title": "Geologist — Água e Terra",
+      "tl5_title": "Geologist, Água e Terra",
       "tl5_desc": "Working in environmental geology, preparing technical reports and studies for environmental licensing of mining activities and urban developments, water-resource monitoring, and field campaigns.",
-      "tl6_title": "Master's in progress — Feevale",
+      "tl6_title": "Master's in progress, Feevale",
       "tl6_desc": "MSc in Environmental Science at Universidade Feevale, deepening knowledge in environmental science and applied geology.",
-      "tl7_title": "Specialisation in progress — PUC Minas",
+      "tl7_title": "Specialisation in progress, PUC Minas",
       "tl7_desc": "Specialisation in Atmospheric Emissions and Climate Change at PUC Minas, focused on environmental science and climate impacts."
     },
     "cta": {
       "title": "Let's work together",
-      "subtitle": "Whether you need a geological report, a field survey, or an expert opinion — I'm ready to help.",
+      "subtitle": "Whether you need a geological report, a field survey, or an expert opinion, I'm ready to help.",
       "primary": "Get in touch",
       "secondary": "View services"
     }
@@ -123,7 +123,7 @@
     "hero": {
       "tagline": "What I offer",
       "title": "Geological services\nyou can rely on",
-      "description": "Geological and environmental consulting for developments, construction projects, licensing, and mining — backed by technical rigour, field experience, and reports that hold up with regulatory bodies."
+      "description": "Geological and environmental consulting for developments, construction projects, licensing, and mining, backed by technical rigour, field experience, and reports that hold up with regulatory bodies."
     },
     "offerings": {
       "title": "Services",
@@ -159,20 +159,20 @@
       "subtitle": "Two defining strengths that clients consistently rely on.",
       "feat1_label": "Field work",
       "feat1_title": "Direct observation, every time",
-      "feat1_desc": "I believe the most reliable geological data comes from being on-site. Every project I take on includes direct field investigation — no remote-only assessments.",
+      "feat1_desc": "I believe the most reliable geological data comes from being on-site. Every project I take on includes direct field investigation, no remote-only assessments.",
       "feat1_b1": "Systematic outcrop description and sampling",
       "feat1_b2": "GPS-georeferenced field notes and photography",
       "feat1_b3": "Integration with satellite and aerial imagery where relevant",
       "feat2_label": "Reporting",
       "feat2_title": "Reports that actually get used",
-      "feat2_desc": "My reports are written for the people who need to act on them — engineers, lawyers, regulators, and project managers — not just for fellow geologists.",
+      "feat2_desc": "My reports are written for the people who need to act on them, engineers, lawyers, regulators, and project managers, not just for fellow geologists.",
       "feat2_b1": "Plain-language executive summaries",
       "feat2_b2": "Clear figures, maps, and cross-sections",
       "feat2_b3": "Actionable conclusions and recommendations"
     },
     "cta": {
       "title": "Not sure what you need?",
-      "subtitle": "Send me a message describing your project and I'll recommend the right approach — no commitment required.",
+      "subtitle": "Send me a message describing your project and I'll recommend the right approach, no commitment required.",
       "primary": "Get in touch",
       "secondary": "About me"
     }
@@ -181,7 +181,7 @@
     "hero": {
       "tagline": "Get in touch",
       "title": "Let's talk about\nyour project",
-      "description": "Whether you have a specific geological question, need a quote for a field campaign, or just want to understand your options — I'm happy to have a conversation."
+      "description": "Whether you have a specific geological question, need a quote for a field campaign, or just want to understand your options, I'm happy to have a conversation."
     },
     "form": {
       "title": "Send me a message",
@@ -210,9 +210,9 @@
       "hours_value": "Mon–Fri, 8 am–6 pm BRT",
       "offices_title": "Base of operations",
       "hq_label": "Office",
-      "hq_value": "Dois Irmãos, RS — Brazil",
+      "hq_value": "Dois Irmãos, RS, Brazil",
       "eu_label": "Field coverage",
-      "field_coverage": "All Brazilian states — travel quoted separately",
+      "field_coverage": "All Brazilian states, travel quoted separately",
       "apac_label": "Laboratory partners",
       "support_title": "Response time",
       "support_label": "Typical reply",
@@ -224,7 +224,7 @@
       "faq1_q": "What types of projects do you take on?",
       "faq1_a": "I work on environmental assessments, geological mapping, geotechnical investigations, mineral exploration support, and technical reporting for engineering and licensing projects.",
       "faq2_q": "Do you work outside Rio Grande do Sul?",
-      "faq2_a": "Yes — I have completed projects across different Brazilian states and can travel for field campaigns. Travel costs are quoted separately for projects outside the Greater Porto Alegre area.",
+      "faq2_a": "Yes, I have completed projects across different Brazilian states and can travel for field campaigns. Travel costs are quoted separately for projects outside the Greater Porto Alegre area.",
       "faq3_q": "How long does a typical project take?",
       "faq3_a": "It depends on scope. A single-site visit and summary report can be delivered in 3–5 business days. Full investigation and reporting projects typically take 2–6 weeks.",
       "faq4_q": "Are your reports accepted for regulatory licensing?",

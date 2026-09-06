@@ -9,7 +9,7 @@
   },
   "home": {
     "hero": {
-      "tagline": "Daiana Rodrigues — Geóloga",
+      "tagline": "Daiana Rodrigues, Geóloga",
       "title": "Lendo a Terra,\ncamada por camada",
       "description": "Mapeamento geológico · Consultoria ambiental · Análise de solo · Levantamentos de campo com rigor científico e resultados concretos.",
       "cta_primary": "Ver serviços",
@@ -23,9 +23,9 @@
     },
     "highlights": {
       "title": "Por que trabalhar comigo?",
-      "subtitle": "Anos de trabalho de campo, análise laboratorial e relatórios técnicos — aliados a uma comunicação clara e resultados confiáveis.",
+      "subtitle": "Anos de trabalho de campo, análise laboratorial e relatórios técnicos, aliados a uma comunicação clara e resultados confiáveis.",
       "card1_title": "Experiência de campo",
-      "card1_desc": "Experiência direta em campo em diversos ambientes geológicos — de levantamentos de solo urbano a mapeamento de afloramentos remotos.",
+      "card1_desc": "Experiência direta em campo em diversos ambientes geológicos, de levantamentos de solo urbano a mapeamento de afloramentos remotos.",
       "card2_title": "Precisão técnica",
       "card2_desc": "Metodologia rigorosa de amostragem e análises validadas em laboratório, garantindo que cada resultado seja preciso e defensável.",
       "card3_title": "Relatórios claros",
@@ -39,11 +39,11 @@
       "step2_title": "Campo e laboratório",
       "step2_desc": "Realizo os levantamentos de campo necessários, coleto amostras e executo ou coordeno análises laboratoriais com parceiros acreditados.",
       "step3_title": "Relatório e suporte",
-      "step3_desc": "Você recebe um relatório técnico claro com resultados, interpretações e recomendações — e estou disponível para dúvidas de acompanhamento."
+      "step3_desc": "Você recebe um relatório técnico claro com resultados, interpretações e recomendações, e estou disponível para dúvidas de acompanhamento."
     },
     "cta": {
       "title": "Tem um projeto que precisa de uma geóloga?",
-      "subtitle": "Entre em contato e vamos conversar sobre como posso ajudar — de uma consulta rápida a uma campanha de campo completa.",
+      "subtitle": "Entre em contato e vamos conversar sobre como posso ajudar, de uma consulta rápida a uma campanha de campo completa.",
       "button": "Fale comigo"
     }
   },
@@ -56,7 +56,7 @@
     "mission": {
       "label": "Missão",
       "title": "Trazer clareza geológica a cada projeto",
-      "text": "Existo para ajudar clientes a tomar decisões informadas sobre terra, solo e condições de subsuperfície — fornecendo a inteligência geológica que reduz riscos e promove resultados sustentáveis."
+      "text": "Existo para ajudar clientes a tomar decisões informadas sobre terra, solo e condições de subsuperfície, fornecendo a inteligência geológica que reduz riscos e promove resultados sustentáveis."
     },
     "vision": {
       "label": "Visão",
@@ -71,7 +71,7 @@
       "value2_title": "Mentalidade de campo primeiro",
       "value2_desc": "Nenhuma suposição feita no escritório substitui a observação in loco. Priorizo a observação direta e a coleta de dados em todas as etapas.",
       "value3_title": "Transparência com o cliente",
-      "value3_desc": "Você sempre saberá o que estou fazendo, por quê e o que significa. Sem caixas-pretas — apenas comunicação clara durante todo o trabalho.",
+      "value3_desc": "Você sempre saberá o que estou fazendo, por quê e o que significa. Sem caixas-pretas, apenas comunicação clara durante todo o trabalho.",
       "value4_title": "Responsabilidade ambiental",
       "value4_desc": "Realizo todos os trabalhos de campo com o mínimo de perturbação ambiental e em plena conformidade com as regulamentações e boas práticas aplicáveis.",
       "value5_title": "Aprendizado contínuo",
@@ -81,40 +81,40 @@
       "title": "Formação e credenciais",
       "subtitle": "Um perfil profissional construído sobre base acadêmica sólida, experiência de campo e desenvolvimento contínuo.",
       "member1_name": "Daiana Rodrigues",
-      "member1_role": "Geóloga — Fundadora",
+      "member1_role": "Geóloga, Fundadora",
       "member1_bio": "Bacharelado em Geologia com especialização em geologia ambiental e aplicada. Registrada no CREA.",
-      "member2_name": "Bacharelado em Geologia — Unisinos",
+      "member2_name": "Bacharelado em Geologia, Unisinos",
       "member2_role": "Universidade do Vale do Rio dos Sinos",
       "member2_bio": "Graduação em Geologia/Ciências da Terra pela Unisinos, com formação em geologia geral e aplicada (2016 – 2023).",
-      "member3_name": "Mestrado em andamento — Feevale",
+      "member3_name": "Mestrado em andamento, Feevale",
       "member3_role": "Universidade Feevale",
       "member3_bio": "Mestrado em Ciências Ambientais pela Universidade Feevale, com previsão de conclusão em 2027.",
-      "member4_name": "Especialização em andamento — PUC Minas",
+      "member4_name": "Especialização em andamento, PUC Minas",
       "member4_role": "Pontifícia Universidade Católica de Minas Gerais",
       "member4_bio": "Especialização em Emissões Atmosféricas e Mudanças Climáticas, com previsão de conclusão em setembro de 2026."
     },
     "timeline": {
       "title": "Minha trajetória",
       "present": "presente",
-      "subtitle": "Da primeira aula de geologia até hoje — uma trajetória de campo, pesquisa e crescimento contínuo.",
-      "tl1_title": "Bacharelado em Geologia — Unisinos",
+      "subtitle": "Da primeira aula de geologia até hoje, uma trajetória de campo, pesquisa e crescimento contínuo.",
+      "tl1_title": "Bacharelado em Geologia, Unisinos",
       "tl1_desc": "Graduação em Geologia/Ciências da Terra pela Universidade do Vale do Rio dos Sinos, com formação em geologia geral e aplicada.",
-      "tl2_title": "Primeiro estágio — Água & Terra",
+      "tl2_title": "Primeiro estágio, Água & Terra",
       "tl2_desc": "Início da vida profissional auxiliando em relatórios de licenciamento para mineração, elaboração de laudos para loteamentos urbanos, autorizações ambientais e campanhas de campo para sondagens.",
-      "tl3_title": "Estágio — Ecoplan Engenharia",
+      "tl3_title": "Estágio, Ecoplan Engenharia",
       "tl3_desc": "Atuação em duas fases na Ecoplan, produzindo relatórios e mapas de geologia, geomorfologia, pedologia e hidrogeologia para obras de engenharia como pontes e rodovias, além de suporte ao monitoramento de processos erosivos em rodovias federais.",
-      "tl4_title": "Iniciação científica — CNPq/Unisinos",
+      "tl4_title": "Iniciação científica, CNPq/Unisinos",
       "tl4_desc": "Bolsista de iniciação científica com desenvolvimento de painel de dados para monitoramento de áreas de risco de inundações no Vale do Rio Taquari.",
-      "tl5_title": "Geóloga — Água e Terra",
+      "tl5_title": "Geóloga, Água e Terra",
       "tl5_desc": "Atuação em geologia ambiental com elaboração de relatórios técnicos e laudos para licenciamento ambiental de atividades minerárias e empreendimentos urbanos, monitoramento de recursos hídricos e campanhas de campo.",
-      "tl6_title": "Mestrado em andamento — Feevale",
+      "tl6_title": "Mestrado em andamento, Feevale",
       "tl6_desc": "Mestrado em Ciências Ambientais pela Universidade Feevale, aprofundando conhecimentos em meio ambiente e geologia aplicada.",
-      "tl7_title": "Especialização em andamento — PUC Minas",
+      "tl7_title": "Especialização em andamento, PUC Minas",
       "tl7_desc": "Especialização em Emissões Atmosféricas e Mudanças Climáticas pela PUC Minas, com foco em ciências ambientais e impactos climáticos."
     },
     "cta": {
       "title": "Vamos trabalhar juntos",
-      "subtitle": "Seja um relatório geológico, um levantamento de campo ou uma opinião técnica — estou pronta para ajudar.",
+      "subtitle": "Seja um relatório geológico, um levantamento de campo ou uma opinião técnica, estou pronta para ajudar.",
       "primary": "Entre em contato",
       "secondary": "Ver serviços"
     }
@@ -123,7 +123,7 @@
     "hero": {
       "tagline": "O que ofereço",
       "title": "Serviços geológicos\nem que você pode confiar",
-      "description": "Consultoria geológica e ambiental para empreendimentos, obras, licenciamentos e mineração — com rigor técnico, experiência de campo e relatórios que realmente funcionam nos órgãos competentes."
+      "description": "Consultoria geológica e ambiental para empreendimentos, obras, licenciamentos e mineração, com rigor técnico, experiência de campo e relatórios que realmente funcionam nos órgãos competentes."
     },
     "offerings": {
       "title": "Serviços",
@@ -159,20 +159,20 @@
       "subtitle": "Dois pontos fortes que meus clientes sempre destacam.",
       "feat1_label": "Trabalho de campo",
       "feat1_title": "Observação direta, sempre",
-      "feat1_desc": "Acredito que os dados geológicos mais confiáveis vêm de estar no local. Cada projeto que aceito inclui investigação de campo direta — sem avaliações apenas remotas.",
+      "feat1_desc": "Acredito que os dados geológicos mais confiáveis vêm de estar no local. Cada projeto que aceito inclui investigação de campo direta, sem avaliações apenas remotas.",
       "feat1_b1": "Descrição e amostragem sistemática de afloramentos",
       "feat1_b2": "Notas de campo e fotografias georreferenciadas por GPS",
       "feat1_b3": "Integração com imagens de satélite e aéreas quando relevante",
       "feat2_label": "Relatórios",
       "feat2_title": "Relatórios que realmente são usados",
-      "feat2_desc": "Meus relatórios são escritos para quem precisa agir com base neles — engenheiros, advogados, reguladores e gerentes de projeto — não apenas para outros geólogos.",
+      "feat2_desc": "Meus relatórios são escritos para quem precisa agir com base neles, engenheiros, advogados, reguladores e gerentes de projeto, não apenas para outros geólogos.",
       "feat2_b1": "Resumos executivos em linguagem acessível",
       "feat2_b2": "Figuras, mapas e seções transversais claros",
       "feat2_b3": "Conclusões e recomendações acionáveis"
     },
     "cta": {
       "title": "Não sabe do que precisa?",
-      "subtitle": "Me envie uma mensagem descrevendo seu projeto e eu recomendarei a abordagem certa — sem compromisso.",
+      "subtitle": "Me envie uma mensagem descrevendo seu projeto e eu recomendarei a abordagem certa, sem compromisso.",
       "primary": "Entre em contato",
       "secondary": "Sobre mim"
     }
@@ -181,7 +181,7 @@
     "hero": {
       "tagline": "Entre em contato",
       "title": "Vamos conversar sobre\nseu projeto",
-      "description": "Seja uma dúvida geológica específica, um orçamento para campanha de campo, ou apenas entender suas opções — estou disponível para uma conversa."
+      "description": "Seja uma dúvida geológica específica, um orçamento para campanha de campo, ou apenas entender suas opções, estou disponível para uma conversa."
     },
     "form": {
       "title": "Me envie uma mensagem",
@@ -210,7 +210,7 @@
       "hours_value": "Seg–Sex, 8h–18h (BRT)",
       "offices_title": "Base de operações",
       "hq_label": "Escritório",
-      "hq_value": "Dois Irmãos, RS — Brasil",
+      "hq_value": "Dois Irmãos, RS, Brasil",
       "eu_label": "Área de atuação em campo",
       "field_coverage": "Rio Grande do Sul",
       "apac_label": "Parceiros laboratoriais",
@@ -224,7 +224,7 @@
       "faq1_q": "Que tipos de projeto você aceita?",
       "faq1_a": "Trabalho com avaliações ambientais, mapeamento geológico, investigações geotécnicas, suporte à exploração mineral e elaboração de relatórios técnicos para projetos de engenharia e licenciamento.",
       "faq2_q": "Você atua fora do Rio Grande do Sul?",
-      "faq2_a": "Sim — já realizei projetos em diferentes estados brasileiros e posso me deslocar para campanhas de campo. Custos de deslocamento são orçados separadamente para projetos fora da região metropolitana de Porto Alegre.",
+      "faq2_a": "Sim, já realizei projetos em diferentes estados brasileiros e posso me deslocar para campanhas de campo. Custos de deslocamento são orçados separadamente para projetos fora da região metropolitana de Porto Alegre.",
       "faq3_q": "Quanto tempo leva um projeto típico?",
       "faq3_a": "Depende do escopo. Uma visita a campo e um relatório resumido podem ser entregues em 3 a 5 dias úteis. Projetos completos de investigação e relatório geralmente levam de 2 a 6 semanas.",
       "faq4_q": "Seus laudos são aceitos para licenciamento ambiental?",

@@ -7,9 +7,12 @@ import Header from '@/components/Header'
 const inter = Inter({ subsets: ['latin'], weight: ['300', '400', '500'] })
 
 export const metadata: Metadata = {
-  title: 'Dr. Geo — Daiana Rodrigues, Geóloga',
+  title: 'Dr. Geo | Daiana Rodrigues, Geóloga',
   description:
     'Mapeamento geológico, consultoria ambiental, análise de solo e levantamentos de campo com rigor científico e resultados concretos.',
+  icons: {
+    icon: '/logos/logo-dark.png',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
