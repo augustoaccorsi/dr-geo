@@ -12,7 +12,7 @@ export default function Stats() {
   const { t } = useTranslation()
 
   return (
-    <section className="bg-[#F5F5F5] border-b border-neutral-200">
+    <section className="bg-[#F5F5F5] dark:bg-[#161210] border-b border-neutral-200 dark:border-white/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
           {stats.map(({ value, key }) => (
@@ -20,7 +20,7 @@ export default function Stats() {
               <p className="text-4xl lg:text-5xl font-medium tracking-[-0.04em] text-amber-700 mb-1.5">
                 {value}
               </p>
-              <p className="text-sm text-neutral-500 tracking-tight">
+              <p className="text-sm text-neutral-500 dark:text-neutral-400 tracking-tight">
                 {t(`home.stats.${key}`)}
               </p>
             </div>

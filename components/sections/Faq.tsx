@@ -14,24 +14,24 @@ export default function Faq() {
   const { t } = useTranslation()
 
   return (
-    <section className="bg-white py-24 lg:py-32">
+    <section className="bg-white dark:bg-[#1C1814] py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-16">
-          <h2 className="text-4xl lg:text-5xl font-medium tracking-[-0.03em] text-neutral-900 leading-[1.1] mb-3">
+          <h2 className="text-4xl lg:text-5xl font-medium tracking-[-0.03em] text-neutral-900 dark:text-white leading-[1.1] mb-3">
             {t('contact.faq.title')}
           </h2>
-          <p className="text-sm text-neutral-500 tracking-tight">
+          <p className="text-sm text-neutral-500 dark:text-neutral-400 tracking-tight">
             {t('contact.faq.subtitle')}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-5">
           {faqs.map(({ qKey, aKey }) => (
-            <div key={qKey} className="bg-[#F5F5F5] rounded-2xl p-7">
-              <p className="text-sm font-medium tracking-tight text-neutral-900 mb-3">
+            <div key={qKey} className="bg-[#F5F5F5] dark:bg-[#161210] rounded-2xl p-7">
+              <p className="text-sm font-medium tracking-tight text-neutral-900 dark:text-white mb-3">
                 {t(`contact.faq.${qKey}`)}
               </p>
-              <p className="text-sm text-neutral-500 leading-relaxed tracking-tight">
+              <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed tracking-tight">
                 {t(`contact.faq.${aKey}`)}
               </p>
             </div>

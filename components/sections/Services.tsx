@@ -13,36 +13,36 @@ export default function Services() {
   const { t } = useTranslation()
 
   return (
-    <section id="services" className="bg-white py-24 lg:py-32">
+    <section id="services" className="bg-white dark:bg-[#1C1814] py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="mb-16">
           <p className="text-xs font-medium tracking-[0.18em] uppercase text-amber-600 mb-5">
             {t('services.hero.tagline')}
           </p>
-          <h2 className="text-4xl lg:text-5xl font-medium tracking-[-0.03em] text-neutral-900 leading-[1.1] mb-4">
+          <h2 className="text-4xl lg:text-5xl font-medium tracking-[-0.03em] text-neutral-900 dark:text-white leading-[1.1] mb-4">
             {t('services.offerings.title')}
           </h2>
-          <p className="text-sm text-neutral-500 tracking-tight max-w-xl">
+          <p className="text-sm text-neutral-500 dark:text-neutral-400 tracking-tight max-w-xl">
             {t('services.offerings.subtitle')}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-5">
           {categories.map(({ Icon, titleKey, descKey, items }) => (
-            <div key={titleKey} className="bg-[#F5F5F5] rounded-2xl p-7">
-              <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center mb-6 border border-neutral-200">
-                <Icon size={19} className="text-neutral-600" />
+            <div key={titleKey} className="bg-[#F5F5F5] dark:bg-[#161210] rounded-2xl p-7">
+              <div className="w-10 h-10 bg-white dark:bg-[#1C1814] rounded-xl flex items-center justify-center mb-6 border border-neutral-200 dark:border-white/10">
+                <Icon size={19} className="text-neutral-600 dark:text-neutral-400" />
               </div>
-              <h3 className="text-sm font-medium tracking-tight text-neutral-900 mb-2">
+              <h3 className="text-sm font-medium tracking-tight text-neutral-900 dark:text-white mb-2">
                 {t(`services.offerings.${titleKey}`)}
               </h3>
-              <p className="text-sm text-neutral-500 leading-relaxed tracking-tight mb-6">
+              <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed tracking-tight mb-6">
                 {t(`services.offerings.${descKey}`)}
               </p>
               <ul className="space-y-2">
                 {items.map(item => (
-                  <li key={item} className="flex items-start gap-2.5 text-sm text-neutral-600 tracking-tight">
-                    <span className="text-neutral-300 mt-0.5 shrink-0 select-none">—</span>
+                  <li key={item} className="flex items-start gap-2.5 text-sm text-neutral-600 dark:text-neutral-400 tracking-tight">
+                    <span className="text-neutral-300 dark:text-white/20 mt-0.5 shrink-0 select-none">—</span>
                     {t(`services.offerings.${item}`)}
                   </li>
                 ))}

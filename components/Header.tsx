@@ -1,7 +1,9 @@
 'use client'
 import { useState, useEffect } from 'react'
+import { useTheme } from 'next-themes'
 import { useTranslation } from 'react-i18next'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
+import { TbSun, TbMoon } from 'react-icons/tb'
 
 const navItems = [
   { labelKey: 'header.company',  href: '#about' },
@@ -11,8 +13,12 @@ const navItems = [
 
 export default function Header() {
   const { t, i18n } = useTranslation()
-  const [scrolled, setScrolled]   = useState(false)
-  const [menuOpen, setMenuOpen]   = useState(false)
+  const { theme, setTheme } = useTheme()
+  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [mounted, setMounted]   = useState(false)
+
+  useEffect(() => { setMounted(true) }, [])
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 72)
@@ -23,11 +29,14 @@ export default function Header() {
   const toggleLang = () =>
     i18n.changeLanguage(i18n.language === 'pt' ? 'en' : 'pt')
 
+  const toggleTheme = () =>
+    setTheme(theme === 'dark' ? 'light' : 'dark')
+
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-sm shadow-sm text-neutral-900'
+          ? 'bg-white/95 dark:bg-[#1C1814]/95 backdrop-blur-sm shadow-sm dark:shadow-none text-neutral-900 dark:text-white'
           : 'bg-transparent text-white'
       }`}
     >
@@ -62,6 +71,15 @@ export default function Header() {
           >
             {i18n.language === 'pt' ? 'EN' : 'PT'}
           </button>
+          {mounted && (
+            <button
+              onClick={toggleTheme}
+              className="hidden lg:flex items-center hover:opacity-60 transition-opacity"
+              aria-label="Toggle theme"
+            >
+              {theme === 'dark' ? <TbSun size={18} /> : <TbMoon size={18} />}
+            </button>
+          )}
           <button
             className="lg:hidden"
             onClick={() => setMenuOpen(p => !p)}
@@ -74,7 +92,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-white text-neutral-900 border-t border-neutral-100">
+        <div className="lg:hidden bg-white dark:bg-[#1C1814] text-neutral-900 dark:text-white border-t border-neutral-100 dark:border-white/10">
           <div className="px-6 py-5 flex flex-col gap-5">
             {navItems.map(({ labelKey, href }) => (
               <a
@@ -86,12 +104,19 @@ export default function Header() {
                 {t(labelKey)}
               </a>
             ))}
-            <button
-              onClick={toggleLang}
-              className="text-sm font-medium text-left text-neutral-500"
-            >
-              {i18n.language === 'pt' ? 'Switch to EN' : 'Mudar para PT'}
-            </button>
+            <div className="flex items-center justify-between">
+              <button
+                onClick={toggleLang}
+                className="text-sm font-medium text-left text-neutral-500 dark:text-neutral-400"
+              >
+                {i18n.language === 'pt' ? 'Switch to EN' : 'Mudar para PT'}
+              </button>
+              {mounted && (
+                <button onClick={toggleTheme} className="hover:opacity-60 transition-opacity text-neutral-500 dark:text-neutral-400">
+                  {theme === 'dark' ? <TbSun size={18} /> : <TbMoon size={18} />}
+                </button>
+              )}
+            </div>
           </div>
         </div>
       )}
