@@ -37,14 +37,14 @@ export default function Header() {
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-white/95 dark:bg-[#1C1814]/95 backdrop-blur-sm shadow-sm dark:shadow-none text-neutral-900 dark:text-white'
-          : 'bg-transparent text-white'
+          : 'bg-transparent text-neutral-900 dark:text-white'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16 lg:h-20">
         {/* Logo */}
         <a href="#hero" className="flex-shrink-0">
           <img
-            src={scrolled && theme !== 'dark' ? '/logos/horizontal-light.png' : '/logos/horizontal-dark.png'}
+            src={mounted && theme === 'dark' ? '/logos/horizontal-dark.png' : '/logos/horizontal-light.png'}
             alt="Dr. Geo"
             className="h-28"
           />
